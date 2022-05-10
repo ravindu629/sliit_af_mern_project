@@ -1,0 +1,44 @@
+/* header */
+
+.nav-section {
+  background-color: rgb(27, 26, 26);
+  padding: 5px 30px;
+}
+.img-responsive {
+  width: 150px;
+  height: 55px;
+  margin-right: 20px;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  height: 2.5rem;
+  background-color: rgb(12, 12, 11);
+  width: 100%;
+}
+
+footer p {
+  color: rgb(233, 223, 223);
+  padding: 9px;
+  font-weight: 400;
+}
+
+/* sidebar */
+
+.sideBar {
+  width: 30%;
+  height: 30rem;
+  margin: 5rem auto;
+  background-color: #dfe2d5;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.bgImg {
+  width: 85%;
+  margin-left: 110px;
+}
