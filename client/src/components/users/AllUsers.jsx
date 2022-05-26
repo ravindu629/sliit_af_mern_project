@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./user.css";
+import "../App.css";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import EditIcon from "@mui/icons-material/Edit";
 
@@ -50,7 +50,6 @@ function AllUsers() {
             <th scope="col">NIC</th>
             <th scope="col">Phone Number</th>
             <th scope="col">Email</th>
-            <th scope="col">Password</th>
             <th></th>
           </tr>
         </thead>
@@ -66,7 +65,6 @@ function AllUsers() {
                 <td>{user.nic}</td>
                 <td>{user.phoneNumber}</td>
                 <td>{user.email}</td>
-                <td>{user.password}</td>
                 <td>
                   <a
                     className="btn btn-warning"

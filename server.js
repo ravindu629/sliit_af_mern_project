@@ -16,9 +16,21 @@ mongoose.connection.once("open", () => {
   console.log("MongoDB Connected");
 });
 
-app.get("/", (req, res) => {
-  res.send("<h3>Employee Management API 🚀</h3>");
-});
+//deploy code
+
+//serve static assets if in production
+if (process.env.NODE_ENV === "production") {
+  //set static folder
+  app.use(express.static(path.join(__dirname, "/client/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.send("Api running");
+  });
+}
 
 app.use("/api/staffMembers", require("./routes/Staff.route"));
 app.use("/api/students", require("./routes/Student.route"));

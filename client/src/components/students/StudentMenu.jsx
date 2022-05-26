@@ -1,7 +1,7 @@
 import React from "react";
 
-function Continue() {
+function StudentMenu() {
   return <div></div>;
 }
 
-export default Continue;
+export default StudentMenu;

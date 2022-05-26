@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./user.css";
+import "../App.css";
 
 function AdminLogin() {
   const [valid, setValid] = useState(false);
@@ -62,6 +62,7 @@ function AdminLogin() {
                         name="staffId"
                         value={user.staffId}
                         onChange={handleChange}
+                        required
                       />
                     </div>
                     <div className="form-group">
@@ -72,6 +73,7 @@ function AdminLogin() {
                         name="password"
                         value={user.password}
                         onChange={handleChange}
+                        required
                       />
                     </div>
                     <button type="submit" className="btn btn-dark">

@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
 
-function StudentLogin() {
+function PanelMemberLogin(props) {
   const [valid, setValid] = useState(false);
   const [user, setUser] = useState({
-    studentId: "",
+    staffId: "",
     password: "",
   });
 
@@ -14,14 +14,15 @@ function StudentLogin() {
 
   function sendData(e) {
     e.preventDefault();
+
     axios
-      .post("http://localhost:5000/api/students/validate", user)
+      .post("http://localhost:5000/api/staffMembers/validate", user)
       .then((res) => {
         if (res.status === 200) {
           alert("user validated");
           setValid(res.data);
 
-          navigate("/studentMenu");
+          navigate("/panelMenu");
         }
       })
       .catch((err) => {
@@ -45,21 +46,20 @@ function StudentLogin() {
   return (
     <div>
       <div className="container mt-5">
-        <div className="loginForm">
-          <h1>Student Login</h1>
-
+        <div className="">
+          <h1>{props.title} Login</h1>
           <div className="row">
             <div className="col-sm-8">
               <div className="card">
                 <div className="card-body">
                   <form onSubmit={sendData}>
                     <div className="form-group">
-                      <label for="id">Student Id</label>
+                      <label for="id">Staff Id</label>
                       <input
                         type="text"
                         className="form-control"
-                        name="studentId"
-                        value={user.studentId}
+                        name="staffId"
+                        value={user.staffId}
                         onChange={handleChange}
                         required
                       />
@@ -87,7 +87,7 @@ function StudentLogin() {
                       If you don't have an account click to
                     </label>
                     &nbsp;&nbsp;
-                    <a href="/addStudent">Register</a>
+                    <a href="/addStaffMember">Register</a>
                   </div>
                 </div>
               </div>
@@ -99,4 +99,4 @@ function StudentLogin() {
   );
 }
 
-export default StudentLogin;
+export default PanelMemberLogin;

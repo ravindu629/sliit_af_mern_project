@@ -11,7 +11,10 @@ function Header() {
           <img className="img-responsive" src={image} />
           SLIIT Research Project Management Tool
         </Navbar.Brand>
-        <Nav className="ms-auto">
+        <Nav
+          className="ms-auto"
+          style={{ fontSize: "18px", fontWeight: "bold" }}
+        >
           <Nav.Link href="/">HOME</Nav.Link>
           <Nav.Link href="/adminLogin">ADMIN</Nav.Link>
           <Nav.Link href="/staffLogin">STAFF</Nav.Link>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./user.css";
+import "../App.css";
 
 function AddStaffMember() {
   const [valid, setValid] = useState(false);
@@ -73,6 +73,7 @@ function AddStaffMember() {
                 placeholder="enter first name"
                 onChange={handleChange}
                 value={user.fName}
+                required
               />
             </div>
           </div>
@@ -89,6 +90,7 @@ function AddStaffMember() {
                 placeholder="enter last name"
                 onChange={handleChange}
                 value={user.lName}
+                required
               />
             </div>
           </div>
@@ -105,6 +107,7 @@ function AddStaffMember() {
                 placeholder="enter staff id"
                 onChange={handleChange}
                 value={user.staffId}
+                required
               />
             </div>
           </div>
@@ -121,6 +124,7 @@ function AddStaffMember() {
                 placeholder="enter faculty name"
                 onChange={handleChange}
                 value={user.faculty}
+                required
               />
             </div>
           </div>
@@ -137,6 +141,7 @@ function AddStaffMember() {
                 placeholder="enter nic"
                 onChange={handleChange}
                 value={user.nic}
+                required
               />
             </div>
           </div>
@@ -153,6 +158,7 @@ function AddStaffMember() {
                 placeholder="enter phone number"
                 onChange={handleChange}
                 value={user.phoneNumber}
+                required
               />
             </div>
           </div>
@@ -169,6 +175,7 @@ function AddStaffMember() {
                 placeholder="enter email address"
                 onChange={handleChange}
                 value={user.email}
+                required
               />
             </div>
           </div>
@@ -185,6 +192,7 @@ function AddStaffMember() {
                 placeholder="enter password"
                 onChange={handleChange}
                 value={user.password}
+                required
               />
             </div>
           </div>

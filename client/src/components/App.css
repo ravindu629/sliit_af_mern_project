@@ -23,7 +23,7 @@ footer {
 
 footer p {
   color: rgb(233, 223, 223);
-  padding: 9px;
+  padding: 5px;
   font-weight: 400;
 }
 
@@ -35,10 +35,33 @@ footer p {
   margin: 5rem auto;
   background-color: #dfe2d5;
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .bgImg {
   width: 85%;
   margin-left: 110px;
+  margin-top: 20px;
+}
+
+.heading {
+  text-align: center;
+  padding: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  font-size: 110%;
+}
+
+.formStyle {
+  margin: 20 400;
+}
+
+.loginForm {
+  margin: 50px 200px;
+  padding: 0 100;
+}
+
+.all {
+  margin: 30px 30px 120px;
 }

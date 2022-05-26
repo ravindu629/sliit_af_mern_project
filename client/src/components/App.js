@@ -15,8 +15,10 @@ import StudentLogin from "./users/StudentLogin";
 import AllUsers from "./users/AllUsers";
 import UpdateUser from "./users/UpdateUser";
 
-import ContinueStudent from "./students/ContinueStudent";
-import ContinueStaff from "./staff/ContinueStaff";
+import SupervisorMenu from "./supervisor/SupervisorMenu";
+import PanelMemberMenu from "./panelMember/PanelMemberMenu";
+import AddMarks from "./supervisor/AddMarks";
+import StudentMenu from "./students/StudentMenu";
 
 function App() {
   return (
@@ -38,9 +40,12 @@ function App() {
 
           <Route path="/students" element={<SideBar />} />
 
-          <Route path="/continueStudent" element={<ContinueStudent />} />
+          <Route path="/studentMenu" element={<StudentMenu />} />
 
-          <Route path="/continueStaff" element={<ContinueStaff />} />
+          <Route path="/supMenu" element={<SupervisorMenu />} />
+          <Route path="/panelMenu" element={<PanelMemberMenu />} />
+
+          <Route path="/addMarks" element={<AddMarks />} />
         </Routes>
 
         <Footer />

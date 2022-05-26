@@ -1,8 +1,9 @@
 const Staff = require("../models/Staff.model");
+const md5 = require("md5");
 
 const addStaffMember = (req, res) => {
-  const { fName, lName, staffId, faculty, nic, phoneNumber, email, password } =
-    req.body;
+  const { fName, lName, staffId, faculty, nic, phoneNumber, email } = req.body;
+  const password = md5(req.body.password);
 
   const staffMember = new Staff({
     fName,
@@ -102,15 +103,17 @@ const removeStaffMember = async (req, res) => {
 
 const validateUser = async (req, res) => {
   const stfId = req.body.staffId;
-  const password = req.body.password;
+  const pass = md5(req.body.password);
 
   try {
     const foundUser = await Staff.findOne({ staffId: stfId });
 
     if (!foundUser) {
       return res.status(404).json("invalid user");
-    } else if (foundUser.password === password) {
+    } else if (foundUser.password === pass) {
       return res.status(200).json(true);
+    } else {
+      return res.status(404).json("incorrect password");
     }
   } catch (error) {
     res.status(400).json(error);

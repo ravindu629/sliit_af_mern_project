@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useParams } from "react-router";
-import "./user.css";
+import "../App.css";
 
 function AddUser() {
   const [user, setUser] = useState({
@@ -91,6 +91,7 @@ function AddUser() {
               placeholder="enter first name"
               onChange={handleChange}
               value={user.fName}
+              required
             />
           </div>
         </div>
@@ -107,6 +108,7 @@ function AddUser() {
               placeholder="enter last name"
               onChange={handleChange}
               value={user.lName}
+              required
             />
           </div>
         </div>
@@ -123,6 +125,7 @@ function AddUser() {
               placeholder="enter staff ID"
               onChange={handleChange}
               value={user.staffId}
+              required
             />
           </div>
         </div>
@@ -139,6 +142,7 @@ function AddUser() {
               placeholder="enter faculty name"
               onChange={handleChange}
               value={user.faculty}
+              required
             />
           </div>
         </div>
@@ -155,6 +159,7 @@ function AddUser() {
               placeholder="enter nic"
               onChange={handleChange}
               value={user.nic}
+              required
             />
           </div>
         </div>
@@ -171,6 +176,7 @@ function AddUser() {
               placeholder="enter phone number"
               onChange={handleChange}
               value={user.phoneNumber}
+              required
             />
           </div>
         </div>
@@ -187,6 +193,7 @@ function AddUser() {
               placeholder="enter email address"
               onChange={handleChange}
               value={user.email}
+              required
             />
           </div>
         </div>
@@ -203,6 +210,7 @@ function AddUser() {
               placeholder="enter password"
               onChange={handleChange}
               value={user.password}
+              required
             />
           </div>
         </div>
