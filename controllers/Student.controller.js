@@ -1,10 +1,16 @@
 const Student = require("../models/Student.model");
-const md5 = require("md5");
 
 const addStudent = (req, res) => {
-  const { fName, lName, studentId, faculty, nic, phoneNumber, email } =
-    req.body;
-  const password = md5(req.body.password);
+  const {
+    fName,
+    lName,
+    studentId,
+    faculty,
+    nic,
+    phoneNumber,
+    email,
+    password,
+  } = req.body;
 
   const student = new Student({
     fName,
@@ -104,7 +110,7 @@ const removeStudent = async (req, res) => {
 
 const validateStudent = async (req, res) => {
   const stdId = req.body.studentId;
-  const pass = md5(req.body.password);
+  const pass = req.body.password;
 
   try {
     const foundUser = await Student.findOne({ studentId: stdId });

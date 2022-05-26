@@ -54,12 +54,14 @@ footer p {
 }
 
 .formStyle {
-  margin: 20 400;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 20px;
 }
 
 .loginForm {
-  margin: 50px 200px;
-  padding: 0 100;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .all {

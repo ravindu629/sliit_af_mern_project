@@ -56,7 +56,7 @@ function AddStaffMember() {
   }
 
   return (
-    <div>
+    <div className="container">
       <div className="formStyle">
         <h2 className="heading">Register Staff Member</h2>
         <form onSubmit={sendData}>

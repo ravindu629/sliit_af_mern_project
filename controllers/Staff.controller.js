@@ -1,9 +1,8 @@
 const Staff = require("../models/Staff.model");
-const md5 = require("md5");
 
 const addStaffMember = (req, res) => {
-  const { fName, lName, staffId, faculty, nic, phoneNumber, email } = req.body;
-  const password = md5(req.body.password);
+  const { fName, lName, staffId, faculty, nic, phoneNumber, email, password } =
+    req.body;
 
   const staffMember = new Staff({
     fName,
@@ -103,7 +102,7 @@ const removeStaffMember = async (req, res) => {
 
 const validateUser = async (req, res) => {
   const stfId = req.body.staffId;
-  const pass = md5(req.body.password);
+  const pass = req.body.password;
 
   try {
     const foundUser = await Staff.findOne({ staffId: stfId });

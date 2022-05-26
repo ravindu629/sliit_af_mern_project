@@ -56,7 +56,7 @@ function AddStudent() {
   }
 
   return (
-    <div>
+    <div className="container">
       <div className="formStyle">
         <h2 className="heading">Register Student</h2>
         <form onSubmit={sendData}>

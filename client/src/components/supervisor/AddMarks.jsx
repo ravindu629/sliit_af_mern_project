@@ -1,8 +1,9 @@
 import React from "react";
+import "../App.css";
 
 export default function AddMarks() {
   return (
-    <div>
+    <div className="container">
       <div className="formStyle">
         <h2 className="heading">Add Marks</h2>
         <form>
