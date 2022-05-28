@@ -21,7 +21,7 @@ function StudentLogin() {
           alert("user validated");
           setValid(res.data);
 
-          navigate("/studentMenu");
+          navigate("/StudentMainPage");
         }
       })
       .catch((err) => {
