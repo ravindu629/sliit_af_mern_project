@@ -18,7 +18,7 @@ import UpdateUser from "./users/UpdateUser";
 import SupervisorMenu from "./supervisor/SupervisorMenu";
 import PanelMemberMenu from "./panelMember/PanelMemberMenu";
 import AddMarks from "./supervisor/AddMarks";
-import StudentMenu from "./students/StudentMenu";
+import StudentMainPage from "./students/StudentMainPage";
 
 function App() {
   return (
@@ -40,7 +40,7 @@ function App() {
 
           <Route path="/students" element={<SideBar />} />
 
-          <Route path="/studentMenu" element={<StudentMenu />} />
+          <Route path="/StudentMainPage" element={<StudentMainPage />} />
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
