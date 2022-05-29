@@ -34,6 +34,8 @@ if (process.env.NODE_ENV === "production") {
 
 app.use("/api/staffMembers", require("./routes/Staff.route"));
 app.use("/api/students", require("./routes/Student.route"));
+app.use("/api/addMarks", require("./routes/SupervisorMarks.route"));
+
 
 app.listen(port, () => {
   console.log("Server is starting on port " + port);

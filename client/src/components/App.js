@@ -46,6 +46,9 @@ function App() {
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
 
           <Route path="/addMarks" element={<AddMarks />} />
+          <Route path="/getMarks" element={<getMarks />} />
+          
+
         </Routes>
 
         <Footer />
