@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import Admins from "./Admins";
 import Staff from "./Staff";
 import Students from "./Students";
 
@@ -20,6 +21,12 @@ export default function ManageUsers() {
     setAdmin(false);
   }
 
+  function adminManage() {
+    setStudents(false);
+    setStaff(false);
+    setAdmin(true);
+  }
+
   return (
     <div>
       <div className="topMenu">
@@ -38,15 +45,18 @@ export default function ManageUsers() {
         >
           Manage Staff
         </button>
+
         <button
           type="button"
           className="btn  btn-lg btn-outline-primary userNavBtn"
+          onClick={adminManage}
         >
           Manage Admin
         </button>
       </div>
       <div>{students && <Students />}</div>
       <div>{staff && <Staff />}</div>
+      <div>{admin && <Admins />}</div>
     </div>
   );
 }
