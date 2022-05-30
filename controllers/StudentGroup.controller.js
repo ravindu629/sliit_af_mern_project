@@ -125,31 +125,10 @@ const removeStudentGroup = async (req, res) => {
     }
 };
 
-/*
-const validateStudent = async (req, res) => {
-    const stdId = req.body.studentId;
-    const pass = req.body.password;
-
-    try {
-        const foundUser = await Student.findOne({ studentId: stdId });
-
-        if (!foundUser) {
-            return res.status(404).json("invalid user");
-        } else if (foundUser.password === pass) {
-            return res.status(200).json(true);
-        } else {
-            return res.status(404).json("incorrect password");
-        }
-    } catch (error) {
-        res.status(400).json(error);
-    }
-};*/
-
 module.exports = {
     addStudentGroup,
     getStudentGroups,
     getStudentGroup,
     updateStudentGroup,
     removeStudentGroup,
-    /*validateStudent,*/
 };
