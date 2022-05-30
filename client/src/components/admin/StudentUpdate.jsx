@@ -4,11 +4,11 @@ import axios from "axios";
 import { useParams } from "react-router";
 import "../App.css";
 
-function AddUser() {
+function StudentUpdate() {
   const [user, setUser] = useState({
     fName: "",
     lName: "",
-    staffId: "",
+    studentId: "",
     faculty: "",
     nic: "",
     phoneNumber: "",
@@ -23,7 +23,7 @@ function AddUser() {
   useEffect(() => {
     function getUser() {
       axios
-        .get(`http://localhost:5000/api/staffMembers/${id}`)
+        .get(`http://localhost:5000/api/students/${id}`)
         .then((res) => {
           setUser(res.data);
         })
@@ -34,33 +34,20 @@ function AddUser() {
     getUser();
   }, []);
 
-  //console.log(user);
-
   function updateData(e) {
     e.preventDefault();
 
     const updatedUser = user;
 
     axios
-      .put(`http://localhost:5000/api/staffMembers/${id}`, updatedUser)
+      .put(`http://localhost:5000/api/students/${id}`, updatedUser)
       .then(() => {
-        alert("user updated");
-        navigate("/users");
+        alert("student updated");
+        navigate("/manageUsers");
       })
       .catch((err) => {
         alert(err);
       });
-
-    // setUser({
-    //   fName: "",
-    //   lName: "",
-    //   staffId: "",
-    //   faculty: "",
-    //   nic: "",
-    //   phoneNumber: "",
-    //   email: "",
-    //   password: "",
-    // });
   }
 
   function handleChange(event) {
@@ -77,7 +64,7 @@ function AddUser() {
   return (
     <div className="container">
       <div className="formStyle">
-        <h2 className="heading">Update staff member</h2>
+        <h2 className="heading">Update student</h2>
         <form onSubmit={updateData}>
           <div class="form-group row">
             <label for="fname" class="col-sm-2 col-form-label">
@@ -115,17 +102,17 @@ function AddUser() {
           </div>
           <div class="form-group row">
             <label for="staffid" class="col-sm-2 col-form-label">
-              Staff ID
+              Student ID
             </label>
             <div class="col-sm-10">
               <input
                 type="text"
                 class="form-control"
-                id="staffid"
-                name="staffId"
-                placeholder="enter staff ID"
+                id="studentid"
+                name="studentId"
+                placeholder="enter student Id"
                 onChange={handleChange}
-                value={user.staffId}
+                value={user.studentId}
                 required
               />
             </div>
@@ -228,4 +215,4 @@ function AddUser() {
   );
 }
 
-export default AddUser;
+export default StudentUpdate;

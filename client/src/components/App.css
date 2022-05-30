@@ -75,8 +75,8 @@ footer p {
   margin-left: 20px;
 }
 
-.stMainPageBtn{
-  background-color: #5d6763; 
+.stMainPageBtn {
+  background-color: #5d6763;
   border: none;
   color: white;
   padding: 20px;
@@ -90,4 +90,16 @@ footer p {
   margin-left: 25px;
   width: 670px;
   height: 60px;
+}
+
+/*Admin manage users page*/
+.topMenu {
+  padding-left: 50px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.userNavBtn {
+  margin-left: 40px;
+  font-weight: bold;
 }

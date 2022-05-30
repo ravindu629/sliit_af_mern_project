@@ -16,13 +16,13 @@ function AdminLogin() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/api/staffMembers/validate", user)
+      .post("http://localhost:5000/api/admins/validate", user)
       .then((res) => {
         if (res.status === 200) {
           alert("user validated");
           setValid(res.data);
 
-          navigate("/users");
+          navigate("/adminMenu");
         }
       })
       .catch((err) => {
