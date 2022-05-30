@@ -69,6 +69,11 @@ footer p {
 }
 
 /*Student Main Page*/
+.StdLeftContent{
+  margin-left: 290px;
+
+}
+
 .img-std-WelcomeInMainPage {
   width: 670px;
   height: 250px;
@@ -83,11 +88,35 @@ footer p {
   text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
   margin-left: 25px;
   width: 670px;
   height: 60px;
+  transition-duration: 0.4;
 }
+
+.button1:hover {
+  background-color: #149aed;
+  color: white;
+}
+
+.StudentSupportServices{
+  margin-top: -35.5%;
+  margin-left: 74%;
+  position: relative;
+  width:400px;
+  height: 400px;
+  background-color: #5d6763;
+  border-radius: 25px;
+  color: white;
+}
+
+.StudentSupportServicesH2{
+  text-align: center;
+  color: red;
+  padding-top: 34px;
+}
+

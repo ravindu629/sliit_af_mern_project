@@ -20,6 +20,9 @@ import PanelMemberMenu from "./panelMember/PanelMemberMenu";
 import AddMarks from "./supervisor/AddMarks";
 import StudentMainPage from "./students/StudentMainPage";
 
+//Student pages navigation
+import AFpage from "./students/AFpage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -41,11 +44,14 @@ function App() {
           <Route path="/students" element={<SideBar />} />
 
           <Route path="/StudentMainPage" element={<StudentMainPage />} />
+          <Route path="/AFpage" element={<AFpage />} />
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
 
           <Route path="/addMarks" element={<AddMarks />} />
+
+
         </Routes>
 
         <Footer />
