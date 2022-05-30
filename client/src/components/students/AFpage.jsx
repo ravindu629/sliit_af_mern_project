@@ -19,7 +19,7 @@ function AFpage() {
           <div className="navItem">
             <a href="/AFpage">
               <button type="button" className="AFRightNavBarButtons button1">
-                <pre>Register research topic</pre>
+                <pre>Create student groups</pre>
               </button>
             </a>
           </div><br/>
