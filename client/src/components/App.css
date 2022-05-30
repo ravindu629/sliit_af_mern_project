@@ -120,3 +120,46 @@ footer p {
   color: red;
   padding-top: 34px;
 }
+
+/*--------------AFpage Css---------------*/
+.AFstyles{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:17.8px;
+}
+
+.FirstH1{
+  color:red;
+}
+
+.AFRightNavBar {
+  margin-top: -13%;
+  margin-left: 74%;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #5d6763;
+  border-radius: 25px;
+}
+
+.AFRightNavBarBody{
+  padding-top: 28px;
+  padding-left: 10px;
+}
+
+.AFRightNavBarButtons{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 25px;
+  width: 330px;
+  height: 60px;
+  transition-duration: 0.4;
+}
