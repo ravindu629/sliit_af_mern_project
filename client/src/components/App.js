@@ -19,6 +19,12 @@ import SupervisorMenu from "./supervisor/SupervisorMenu";
 import PanelMemberMenu from "./panelMember/PanelMemberMenu";
 import AddMarks from "./supervisor/AddMarks";
 import StudentMainPage from "./students/StudentMainPage";
+import ViewMarks from "./supervisor/ViewMarks";
+import UpdateMarks from "./supervisor/UpdateMarks";
+import ChatMenu from "./supervisor/ChatMenu";
+
+
+
 
 function App() {
   return (
@@ -46,8 +52,12 @@ function App() {
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
 
           <Route path="/addMarks" element={<AddMarks />} />
-          <Route path="/getMarks" element={<getMarks />} />
+          <Route path="/getMarks" element={<ViewMarks />} />
+          <Route path="/updateMarks/:id" element={<UpdateMarks />} />
+          <Route path="/chatMenu" element={<ChatMenu />} />
+
           
+
 
         </Routes>
 

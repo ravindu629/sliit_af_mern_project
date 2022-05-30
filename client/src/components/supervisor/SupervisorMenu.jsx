@@ -47,7 +47,7 @@ export default function SupervisorMenu() {
         </a>
       </div>
       <div className="navItem">
-        <a href="">
+        <a href="/getMarks">
           <button
             type="button"
             className="btn btn-secondary menuBtn"
@@ -59,7 +59,7 @@ export default function SupervisorMenu() {
       </div>
 
       <div className="navItem">
-        <a href="">
+        <a href="/ChatMenu">
           <button
             type="button"
             className="btn btn-secondary menuBtn"
