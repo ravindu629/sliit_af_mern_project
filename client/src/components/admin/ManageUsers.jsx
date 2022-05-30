@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import Staff from "./Staff";
 import Students from "./Students";
 
 export default function ManageUsers() {
@@ -10,6 +11,12 @@ export default function ManageUsers() {
   function studentsManage() {
     setStudents(true);
     setStaff(false);
+    setAdmin(false);
+  }
+
+  function staffManage() {
+    setStudents(false);
+    setStaff(true);
     setAdmin(false);
   }
 
@@ -24,24 +31,22 @@ export default function ManageUsers() {
           Manage Students
         </button>
 
-        <a href="/studentsManage">
-          <button
-            type="button"
-            className="btn  btn-lg btn-outline-primary userNavBtn"
-          >
-            Manage Staff
-          </button>
-        </a>
-        <a href="/studentsManage">
-          <button
-            type="button"
-            className="btn  btn-lg btn-outline-primary userNavBtn"
-          >
-            Manage Admin
-          </button>
-        </a>
+        <button
+          type="button"
+          className="btn  btn-lg btn-outline-primary userNavBtn"
+          onClick={staffManage}
+        >
+          Manage Staff
+        </button>
+        <button
+          type="button"
+          className="btn  btn-lg btn-outline-primary userNavBtn"
+        >
+          Manage Admin
+        </button>
       </div>
       <div>{students && <Students />}</div>
+      <div>{staff && <Staff />}</div>
     </div>
   );
 }

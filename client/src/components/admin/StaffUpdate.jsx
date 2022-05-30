@@ -4,11 +4,11 @@ import axios from "axios";
 import { useParams } from "react-router";
 import "../App.css";
 
-function StudentUpdate() {
+function StaffUpdate() {
   const [user, setUser] = useState({
     fName: "",
     lName: "",
-    studentId: "",
+    staffId: "",
     faculty: "",
     nic: "",
     phoneNumber: "",
@@ -23,7 +23,7 @@ function StudentUpdate() {
   useEffect(() => {
     function getUser() {
       axios
-        .get(`http://localhost:5000/api/students/${id}`)
+        .get(`http://localhost:5000/api/staffMembers/${id}`)
         .then((res) => {
           setUser(res.data);
         })
@@ -40,9 +40,9 @@ function StudentUpdate() {
     const updatedUser = user;
 
     axios
-      .put(`http://localhost:5000/api/students/${id}`, updatedUser)
+      .put(`http://localhost:5000/api/staffMembers/${id}`, updatedUser)
       .then(() => {
-        alert("student updated");
+        alert("staff member updated");
         navigate("/manageUsers");
       })
       .catch((err) => {
@@ -64,7 +64,7 @@ function StudentUpdate() {
   return (
     <div className="container">
       <div className="formStyle">
-        <h2 className="heading">Update Student</h2>
+        <h2 className="heading">Update Staff Member</h2>
         <form onSubmit={updateData}>
           <div class="form-group row">
             <label for="fname" class="col-sm-2 col-form-label">
@@ -102,17 +102,17 @@ function StudentUpdate() {
           </div>
           <div class="form-group row">
             <label for="staffid" class="col-sm-2 col-form-label">
-              Student ID
+              Staff ID
             </label>
             <div class="col-sm-10">
               <input
                 type="text"
                 class="form-control"
-                id="studentid"
-                name="studentId"
-                placeholder="enter student Id"
+                id="staffid"
+                name="staffId"
+                placeholder="enter staff Id"
                 onChange={handleChange}
-                value={user.studentId}
+                value={user.staffId}
                 required
               />
             </div>
@@ -215,4 +215,4 @@ function StudentUpdate() {
   );
 }
 
-export default StudentUpdate;
+export default StaffUpdate;

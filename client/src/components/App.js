@@ -19,6 +19,7 @@ import StudentMainPage from "./students/StudentMainPage";
 import AdminMenu from "./admin/AdminMenu";
 import ManageUsers from "./admin/ManageUsers";
 import StudentUpdate from "./admin/StudentUpdate";
+import StaffUpdate from "./admin/StaffUpdate";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/adminMenu" element={<AdminMenu />} />
           <Route path="/manageUsers" element={<ManageUsers />} />
           <Route path="/updateStudent/:id" element={<StudentUpdate />} />
+          <Route path="/updateStaffMember/:id" element={<StaffUpdate />} />
         </Routes>
 
         <Footer />
