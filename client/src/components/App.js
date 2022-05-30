@@ -12,13 +12,16 @@ import AdminLogin from "./users/AdminLogin";
 import StaffLogin from "./users/StaffLogin";
 import StudentLogin from "./users/StudentLogin";
 
-import AllUsers from "./users/AllUsers";
-import UpdateUser from "./users/UpdateUser";
-
 import SupervisorMenu from "./supervisor/SupervisorMenu";
 import PanelMemberMenu from "./panelMember/PanelMemberMenu";
 import AddMarks from "./supervisor/AddMarks";
 import StudentMainPage from "./students/StudentMainPage";
+
+import AdminMenu from "./admin/AdminMenu";
+import ManageUsers from "./admin/ManageUsers";
+import StudentUpdate from "./admin/StudentUpdate";
+import StaffUpdate from "./admin/StaffUpdate";
+import AdminUpdate from "./admin/AdminUpdate";
 
 //Student pages navigation
 import AFpage from "./students/AFpage";
@@ -38,9 +41,6 @@ function App() {
           <Route path="/staffLogin" element={<StaffLogin />} />
           <Route path="/studentLogin" element={<StudentLogin />} />
 
-          <Route path="/users" element={<AllUsers />} />
-          <Route path="/updateUser/:id" element={<UpdateUser />} />
-
           <Route path="/students" element={<SideBar />} />
 
           <Route path="/StudentMainPage" element={<StudentMainPage />} />
@@ -51,7 +51,11 @@ function App() {
 
           <Route path="/addMarks" element={<AddMarks />} />
 
-
+          <Route path="/adminMenu" element={<AdminMenu />} />
+          <Route path="/manageUsers" element={<ManageUsers />} />
+          <Route path="/updateStudent/:id" element={<StudentUpdate />} />
+          <Route path="/updateStaffMember/:id" element={<StaffUpdate />} />
+          <Route path="/updateAdmin/:id" element={<AdminUpdate />} />
         </Routes>
 
         <Footer />
