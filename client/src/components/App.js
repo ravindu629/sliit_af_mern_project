@@ -25,6 +25,7 @@ import AdminUpdate from "./admin/AdminUpdate";
 
 //Student pages navigation
 import AFpage from "./students/AFpage";
+import AddAdmin from "./admin/AddAdmin";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
 
           <Route path="/addStaffMember" element={<AddStaffMember />} />
           <Route path="/addStudent" element={<AddStudent />} />
+          <Route path="/addAdmin" element={<AddAdmin />} />
 
           <Route path="/adminLogin" element={<AdminLogin />} />
           <Route path="/staffLogin" element={<StaffLogin />} />

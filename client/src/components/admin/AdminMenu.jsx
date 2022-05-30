@@ -17,7 +17,7 @@ export default function AdminMenu() {
         </a>
       </div>
       <div className="navItem">
-        <a href="">
+        <a href="/addAdmin">
           <button
             type="button"
             className="btn btn-secondary menuBtn"
