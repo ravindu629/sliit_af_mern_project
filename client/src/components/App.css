@@ -4,6 +4,7 @@
   background-color: rgb(27, 26, 26);
   padding: 5px 30px;
 }
+
 .img-responsive {
   width: 150px;
   height: 55px;
@@ -69,7 +70,7 @@ footer p {
 }
 
 /*Student Main Page*/
-.StdLeftContent{
+.StdLeftContent {
   margin-left: 290px;
 
 }
@@ -80,8 +81,8 @@ footer p {
   margin-left: 20px;
 }
 
-.stMainPageBtn{
-  background-color: #5d6763; 
+.stMainPageBtn {
+  background-color: #5d6763;
   border: none;
   color: white;
   padding: 20px;
@@ -103,20 +104,19 @@ footer p {
   color: white;
 }
 
-.StudentSupportServices{
+.StudentSupportServices {
   margin-top: -35.5%;
   margin-left: 74%;
   position: relative;
-  width:400px;
+  width: 400px;
   height: 400px;
   background-color: #5d6763;
   border-radius: 25px;
   color: white;
 }
 
-.StudentSupportServicesH2{
+.StudentSupportServicesH2 {
   text-align: center;
   color: red;
   padding-top: 34px;
 }
-
