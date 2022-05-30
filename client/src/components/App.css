@@ -174,3 +174,23 @@ footer p {
   margin-left: 40px;
   font-weight: bold;
 }
+
+.adminMenu {
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 25%;
+  border: 3px solid black;
+}
+
+.admMenu {
+  padding: 30px 40px;
+}
+
+.menuBtn {
+  width: 94%;
+  margin-top: 20px;
+  height: 50px;
+  text-align: left;
+  font-size: 110%;
+  font-weight: bold;
+}
