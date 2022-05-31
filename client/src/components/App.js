@@ -16,7 +16,7 @@ import AllUsers from "./users/AllUsers";
 import UpdateUser from "./users/UpdateUser";
 
 import ContinueStudent from "./students/ContinueStudent";
-import ContinueStaff from "./staff/ContinueStaff";
+//import ContinueStaff from "./staff/ContinueStaff";
 
 import SupervisorMenu from "./supervisor/SupervisorMenu";
 import PanelMemberMenu from "./panelMember/PanelMemberMenu"
@@ -43,7 +43,7 @@ function App() {
 
           <Route path="/continueStudent" element={<ContinueStudent />} />
 
-          <Route path="/continueStaff" element={<ContinueStaff />} />
+          <Route path="/PanelMemberMenu" element={<PanelMemberMenu />} />
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
         </Routes>

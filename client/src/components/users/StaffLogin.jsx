@@ -25,7 +25,7 @@ function StaffLogin() {
           alert("user validated");
           setValid(res.data);
 
-          navigate("/continueStaff");
+          navigate("/PanelMemberMenu");
         }
       })
       .catch((err) => {
