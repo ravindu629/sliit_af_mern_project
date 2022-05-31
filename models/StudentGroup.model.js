@@ -4,9 +4,9 @@ const { Schema } = mongoose;
 const studentGroupSchema = new Schema({
   groupID:String,
   groupName:String,
-  leaderEmail: String,
   leaderITNum: String,
   leaderName: String,
+  leaderEmail: String,
   member1ITNum: String,
   member1Name: String,
   member2ITNum: String,
