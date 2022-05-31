@@ -4,10 +4,10 @@ import welcomImg from "../images/WelcomeSupervice.jpg";
 
 export default function SupervisorMenu() {
   return (
-    <div style={{ paddingLeft: "400px", paddingTop: "80px" }}>
+    <div style={{ paddingLeft: "200px", paddingTop: "80px" }}>
 
   
-      <h2>Supervisor Menu</h2>
+      <h2>  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;Supervisor Menu</h2>
 
       <br></br><br></br>
      
@@ -16,7 +16,7 @@ export default function SupervisorMenu() {
           <button
             type="button"
             className="btn btn-secondary menuBtn"
-            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px", backgroundColor:"#8000ff" }}
           >
             View Topic
           </button>
@@ -29,7 +29,7 @@ export default function SupervisorMenu() {
           <button
             type="button"
             className="btn btn-secondary menuBtn"
-            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px" , backgroundColor:"#8000ff"}}
           >
             Add Marks
           </button>
@@ -40,7 +40,7 @@ export default function SupervisorMenu() {
           <button
             type="button"
             className="btn btn-secondary menuBtn"
-            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px" , backgroundColor:"#8000ff"  }}
           >
             View Marking Scheme
           </button>
@@ -51,7 +51,7 @@ export default function SupervisorMenu() {
           <button
             type="button"
             className="btn btn-secondary menuBtn"
-            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px", backgroundColor:"#8000ff"  }}
           >
             View Marks
           </button>
@@ -63,7 +63,7 @@ export default function SupervisorMenu() {
           <button
             type="button"
             className="btn btn-secondary menuBtn"
-            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px", backgroundColor:"#8000ff"  }}
           >
           Chat With Groups
           </button>
