@@ -52,8 +52,8 @@ function App() {
 
           <Route path="/StudentMainPage" element={<StudentMainPage />} />
           <Route path="/AFpage" element={<AFpage />} />
-          <Route path="/StudentGroup" element={<StudentGroup />} />
-          <Route path="/CreateStudentGroup" element={<CreateStudentGroup />} />
+          <Route path="/studentGroup" element={<StudentGroup />} />
+          <Route path="/createStudentGroup" element={<CreateStudentGroup />} />
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />

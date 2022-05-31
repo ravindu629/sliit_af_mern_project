@@ -27,13 +27,13 @@ function Students() {
       .then((res) => {
         console.log(res.data);
 
-        alert("user deleted");
+        alert("Group deleted");
       })
       .catch((err) => {
         alert(err);
       });
 
-    setUsers(users.filter((user) => user._id !== _id));
+    setGroups(groups.filter((group) => group._id !== _id));
   }
 
   return (
