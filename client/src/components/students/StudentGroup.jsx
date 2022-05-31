@@ -8,7 +8,7 @@ function StudentGroup() {
             <div className="navItem">
                 <br/>
                 <a href="/CreateStudentGroup">
-                    <button type="button" className="stMainPageBtn button1">
+                    <button type="button" className="stGroupPageBtn button2">
                         <pre> ➕ Create Student Group</pre>
                     </button>
                 </a>
