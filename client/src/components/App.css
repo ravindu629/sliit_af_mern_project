@@ -71,12 +71,12 @@ footer p {
 
 /*Student Main Page*/
 .StdLeftContent {
-  margin-left: 290px;
+  margin-left: 200px;
 }
 
 .img-std-WelcomeInMainPage {
-  width: 670px;
-  height: 250px;
+  width: 650px;
+  height: 230px;
   margin-left: 20px;
 }
 
@@ -84,7 +84,7 @@ footer p {
   background-color: #5d6763;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 12px;
   text-align: left;
   text-decoration: none;
   display: inline-block;
@@ -93,8 +93,8 @@ footer p {
   cursor: pointer;
   border-radius: 8px;
   margin-left: 25px;
-  width: 670px;
-  height: 60px;
+  width: 650px;
+  height: 50px;
   transition-duration: 0.4;
 }
 
@@ -104,8 +104,8 @@ footer p {
 }
 
 .StudentSupportServices {
-  margin-top: -35.5%;
-  margin-left: 74%;
+  margin-top: -35.7%;
+  margin-left: 70%;
   position: relative;
   width: 400px;
   height: 400px;
@@ -131,8 +131,8 @@ footer p {
 }
 
 .AFRightNavBar {
-  margin-top: -13%;
-  margin-left: 74%;
+  margin-top: -15%;
+  margin-left: 71.2%;
   position: relative;
   width: 400px;
   height: 400px;
@@ -149,7 +149,7 @@ footer p {
   background-color: #4caf50;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -159,7 +159,7 @@ footer p {
   border-radius: 8px;
   margin-left: 25px;
   width: 330px;
-  height: 60px;
+  height: 58px;
   transition-duration: 0.4;
 }
 
