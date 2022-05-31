@@ -20,8 +20,12 @@ import PanelMemberMenu from "./panelMember/PanelMemberMenu";
 import AddMarks from "./supervisor/AddMarks";
 import StudentMainPage from "./students/StudentMainPage";
 
-//Student pages navigation
+//Student Main pages navigation
 import AFpage from "./students/AFpage";
+
+//Student Group page navigatiom
+import StudentGroup from "./students/StudentGroup";
+import CreateStudentGroup from "./students/CreateStudentGroup";
 
 function App() {
   return (
@@ -45,6 +49,8 @@ function App() {
 
           <Route path="/StudentMainPage" element={<StudentMainPage />} />
           <Route path="/AFpage" element={<AFpage />} />
+          <Route path="/StudentGroup" element={<StudentGroup />} />
+          <Route path="/CreateStudentGroup" element={<CreateStudentGroup />} />
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
