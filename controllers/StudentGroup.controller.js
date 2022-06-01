@@ -111,7 +111,7 @@ const removeStudentGroup = async (req, res) => {
     const ThegroupID = req.params.id;
 
     try {
-        const group = await StudentGroup.findById(ThegroupID);
+        const group = await StudentGroups.findById(ThegroupID);
 
         if (!group) {
             return res.status(404).json("There is no such a group to delete");

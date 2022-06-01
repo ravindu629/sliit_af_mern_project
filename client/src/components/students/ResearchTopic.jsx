@@ -21,6 +21,7 @@ export default function ResearchTopic() {
     }, []);
 
 
+
     return (
         <div className="all">
             <div>
@@ -28,7 +29,8 @@ export default function ResearchTopic() {
                     <button type="button" className="reserchTopicPageBtn button3">
                         <pre> ➕ Register Research Topic</pre>
                     </button>
-                </a>
+                </a>         
+                <button  class="reserchTopicPageBtn button4" onClick={window.print}> 📋 Download PDF</button>   
             </div>
 
             <h2 className="heading">Research Topic Details</h2><br />
