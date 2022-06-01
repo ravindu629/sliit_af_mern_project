@@ -41,6 +41,11 @@ import StudentGroup from "./students/StudentGroup";
 import CreateStudentGroup from "./students/CreateStudentGroup";
 import UpdateStudentGroup from "./students/UpdateStudentGroup";
 
+//Student Research Topic page navigation
+import ResearchTopic from "./students/ResearchTopic";
+import RegisterResearchTopic from "./students/RegisterResearchTopic";
+import UpdateResearchTopic from "./students/UpdateResearchTopic";
+
 
 function App() {
   return (
@@ -65,6 +70,10 @@ function App() {
           <Route path="/studentGroup" element={<StudentGroup />} />
           <Route path="/CreateStudentGroup" element={<CreateStudentGroup />} />
           <Route path="/updateStudentGroup/:id" element={<UpdateStudentGroup />} />
+          <Route path="/researchTopic" element={<ResearchTopic />} />
+          <Route path="/RegisterResearchTopic" element={<RegisterResearchTopic />} />
+          <Route path="/updateResearchTopic/:id" element={<UpdateResearchTopic />} />
+          
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />

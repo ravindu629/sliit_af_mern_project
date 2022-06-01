@@ -25,7 +25,7 @@ function AFpage() {
           </div><br/>
 
           <div className="navItem">
-            <a href="/AFpage">
+            <a href="/ResearchTopic">
               <button type="button" className="AFRightNavBarButtons button1">
                 <pre>Research Topic</pre>
               </button>
