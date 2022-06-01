@@ -82,13 +82,13 @@ function Supervisorlogin(props) {
                   <br />
                   <br />
 
-                  <div>
+                 {/* <div>
                     <label for="password">
                       If you don't have an account click to
                     </label>
                     &nbsp;&nbsp;
                     <a href="/addStaffMember">Register</a>
-                  </div>
+  </div>*/}
                 </div>
               </div>
             </div>

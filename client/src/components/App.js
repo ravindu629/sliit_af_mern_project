@@ -19,6 +19,8 @@ import StudentMainPage from "./students/StudentMainPage";
 import ViewMarks from "./supervisor/ViewMarks";
 import UpdateMarks from "./supervisor/UpdateMarks";
 import ChatMenu from "./supervisor/ChatMenu";
+import Report from "./supervisor/Report";
+
 
 
 
@@ -71,7 +73,9 @@ function App() {
 
           <Route path="/getMarks" element={<ViewMarks />} />
           <Route path="/updateMarks/:id" element={<UpdateMarks />} />
-          <Route path="/chatMenu" element={<ChatMenu />} />
+          <Route path="/ChatMenu" element={<ChatMenu />} />
+          <Route path="/Report" element={<Report />} />
+
 
           
 

@@ -69,6 +69,7 @@ function AddMarks() {
       <div className="formStyle">
         <h2 className="heading">Add Marks</h2>
         <form onSubmit={sendData}>
+     
 
         <div className="form-group row">
             <label for="faname" className="col-sm-2 col-form-label">
