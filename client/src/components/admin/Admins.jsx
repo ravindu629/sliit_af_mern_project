@@ -4,13 +4,13 @@ import "../App.css";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import EditIcon from "@mui/icons-material/Edit";
 
-function AllUsers() {
+function Admins() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
     function getUsers() {
       axios
-        .get("http://localhost:5000/api/staffMembers")
+        .get("http://localhost:5000/api/admins")
         .then((res) => {
           setUsers(res.data);
         })
@@ -23,11 +23,11 @@ function AllUsers() {
 
   function deleteUser(_id) {
     axios
-      .delete("http://localhost:5000/api/staffMembers/" + _id)
+      .delete("http://localhost:5000/api/admins/" + _id)
       .then((res) => {
         console.log(res.data);
 
-        alert("user deleted");
+        alert("admin deleted");
       })
       .catch((err) => {
         alert(err);
@@ -38,15 +38,14 @@ function AllUsers() {
 
   return (
     <div className="all">
-      <h2 className="heading">All Staff Members</h2>
+      <h2 className="heading">All Admins Details</h2>
       <table className="table table-bordered">
         <thead className="table-dark">
           <tr>
             <th scope="col">No</th>
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
-            <th scope="col">Staff ID</th>
-            <th scope="col">Faculty</th>
+            <th scope="col">Admin ID</th>
             <th scope="col">NIC</th>
             <th scope="col">Phone Number</th>
             <th scope="col">Email</th>
@@ -60,17 +59,16 @@ function AllUsers() {
                 <td>{index + 1}</td>
                 <td>{user.fName}</td>
                 <td>{user.lName}</td>
-                <td>{user.staffId}</td>
-                <td>{user.faculty}</td>
+                <td>{user.adminId}</td>
                 <td>{user.nic}</td>
                 <td>{user.phoneNumber}</td>
                 <td>{user.email}</td>
                 <td>
                   <a
                     className="btn btn-warning"
-                    href={`/updateUser/${user._id}`}
+                    href={`/updateAdmin/${user._id}`}
                   >
-                    <EditIcon />
+                    <EditIcon /> Update
                   </a>
                   &nbsp;&nbsp;
                   <a
@@ -85,7 +83,7 @@ function AllUsers() {
                         deleteUser(user._id);
                     }}
                   >
-                    <DeleteForeverIcon />
+                    <DeleteForeverIcon /> Delete
                   </a>
                 </td>
               </tr>
@@ -97,4 +95,4 @@ function AllUsers() {
   );
 }
 
-export default AllUsers;
+export default Admins;

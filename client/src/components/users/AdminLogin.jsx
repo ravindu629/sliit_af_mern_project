@@ -6,7 +6,7 @@ import "../App.css";
 function AdminLogin() {
   const [valid, setValid] = useState(false);
   const [user, setUser] = useState({
-    staffId: "",
+    adminId: "",
     password: "",
   });
 
@@ -16,13 +16,13 @@ function AdminLogin() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/api/staffMembers/validate", user)
+      .post("http://localhost:5000/api/admins/validate", user)
       .then((res) => {
         if (res.status === 200) {
-          alert("user validated");
+          alert("admin validated");
           setValid(res.data);
 
-          navigate("/users");
+          navigate("/adminMenu");
         }
       })
       .catch((err) => {
@@ -59,8 +59,8 @@ function AdminLogin() {
                       <input
                         type="text"
                         className="form-control"
-                        name="staffId"
-                        value={user.staffId}
+                        name="adminId"
+                        value={user.adminId}
                         onChange={handleChange}
                         required
                       />

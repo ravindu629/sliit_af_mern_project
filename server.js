@@ -32,9 +32,14 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+app.use("/api/admins", require("./routes/Admin.route"));
 app.use("/api/staffMembers", require("./routes/Staff.route"));
 app.use("/api/students", require("./routes/Student.route"));
+
 app.use("/api/addMarks", require("./routes/SupervisorMarks.route"));
+
+
+app.use("/api/studentGroups", require("./routes/StudentGroup.route"));
 
 
 app.listen(port, () => {
