@@ -68,6 +68,7 @@ function AddMarks() {
     <div className="container">
       <div className="formStyle">
         <h2 className="heading">Add Marks</h2>
+        <br></br>
         <form onSubmit={sendData}>
      
 
@@ -196,7 +197,7 @@ function AddMarks() {
               />
             </div>
           </div>
-
+<br></br>
           <div className="form-group row">
             <div className="col-sm-10">
               <button type="submit" className="btn btn-primary">

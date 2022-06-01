@@ -222,8 +222,10 @@ footer p {
   color: red;
   padding-top: 34px;
 }
+.updateBtn {
+  margin-right: 100px;
 
-
+}
 /*--------------Student Group Page Css---------------*/
 .stGroupPageBtn {
   background-color: #4caf50;
@@ -257,4 +259,5 @@ footer p {
 
 .btn-alignment{
   margin-left:650px; 
+
 }
