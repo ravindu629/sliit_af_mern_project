@@ -44,6 +44,8 @@ import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
       return (
         <div className="all">
         <h2 className="heading">All Marks Details</h2>
+
+        <br></br><br></br>
         <table className="table table-bordered">
           <thead className="table-dark">
             <tr>
