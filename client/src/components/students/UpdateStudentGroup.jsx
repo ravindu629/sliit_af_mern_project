@@ -83,6 +83,7 @@ function UpdateStudentGroup() {
                             onChange={handleChange}
                             value={group.groupID}
                             required
+                            disabled
                         />
                     </div>
                 </div>
@@ -100,6 +101,7 @@ function UpdateStudentGroup() {
                             onChange={handleChange}
                             value={group.groupName}
                             required
+                            disabled
                         />
                     </div>
                 </div>
