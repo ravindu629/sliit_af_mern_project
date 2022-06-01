@@ -46,6 +46,7 @@ export default function StudentGroup() {
                         <pre> ➕ Create Student Group</pre>
                     </button>
                 </a>
+                <button  class="reserchTopicPageBtn button4" onClick={window.print}> 📋 Download PDF</button>   
             </div>
 
             <h2 className="heading">Student Group Details</h2><br />
