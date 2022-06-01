@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
+import AdminMenu from "../admin/AdminMenu";
 
 function AdminLogin() {
   const [valid, setValid] = useState(false);
@@ -22,7 +23,7 @@ function AdminLogin() {
           alert("admin validated");
           setValid(res.data);
 
-          navigate("/adminMenu");
+          navigate("/AdminMenu", { state: { admId: user.adminId } });
         }
       })
       .catch((err) => {
