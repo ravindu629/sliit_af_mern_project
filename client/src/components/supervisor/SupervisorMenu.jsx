@@ -19,8 +19,8 @@ export default function SupervisorMenu() {
         <a href="">
           <button
             type="button"
-            className="btn btn-secondary menuBtn"
-            style={{ width: "20%", fontSize: "140%", height:"135px", marginTop: "20px",borderBottomLeftRadius:"30px",borderColor:"black"}}
+            className="btn btn-primary"
+            style={{ width: "20%", fontSize: "140%", height:"135px", marginTop: "20px",borderBottomLeftRadius:"30px",borderColor:"black",backgroundColor:"#8000ff"}}
           >
             View Topic
           </button>
@@ -29,7 +29,7 @@ export default function SupervisorMenu() {
         <a href="/addMarks">
           <button
             type="button"
-            className="btn btn-secondary menuBtn"
+            className="btn btn-primary"
             style={{ width: "20%", fontSize: "140%",height:"135px", marginTop: "20px" , backgroundColor:"#8000ff",borderColor:"black",borderTopRightRadius:"30px" }}
           >
             Add Marks
@@ -40,7 +40,7 @@ export default function SupervisorMenu() {
         <a href="">
           <button
             type="button"
-            className="btn btn-secondary menuBtn"
+            className="btn btn-primary"
             style={{ width: "20%", fontSize: "140%",height:"135px", marginTop: "20px" , backgroundColor:"#8000ff",borderColor:"black", borderBottomLeftRadius:"30px" }}
           >
             View Marking Scheme
@@ -54,7 +54,7 @@ export default function SupervisorMenu() {
         <a href="/getMarks">
           <button
             type="button"
-            className="btn btn-secondary menuBtn"
+            className="btn btn-primary"
             style={{ width: "20%", fontSize: "140%",height:"135px", marginTop: "20px", backgroundColor:"#8000ff" ,borderTopRightRadius:"30px",borderColor:"black" }}
           >
             View Marks
@@ -64,7 +64,7 @@ export default function SupervisorMenu() {
         <a href="/ChatMenu">
           <button
             type="button"
-            className="btn btn-secondary menuBtn"
+            className="btn btn-primary"
             style={{ width: "20%", fontSize: "140%",height:"135px", marginTop: "20px", backgroundColor:"#8000ff" ,borderBottomLeftRadius:"30px",borderColor:"black" }}
           >
           Chat With Groups
@@ -74,7 +74,7 @@ export default function SupervisorMenu() {
         <a href="/Report">
           <button
             type="button"
-            className="btn btn-secondary menuBtn"
+            className="btn btn-primary"
             style={{ width: "20%", fontSize: "140%",height:"135px", marginTop: "20px", backgroundColor:"#8000ff" ,borderTopRightRadius:"30px", borderColor:"black" }}
           >
           Report
@@ -99,7 +99,7 @@ export default function SupervisorMenu() {
           <h2 class="SuperServicesH2"> 🧑‍💻 Support Services</h2>
           <br />
           <h3><pre> 🌐 SLIIT Admin Support</pre></h3><br />
-          <h4><pre>      https://support.sliit.lk</pre></h4>
+          <h4><pre>      https://Support.sliit.lk</pre></h4>
           <h3><pre> 📞 Hotline No</pre></h3><br />
           <h4><pre>      8.30 AM to 5.00 PM <br /></pre></h4>
           <h4><pre>      • 011 754 4801</pre></h4>

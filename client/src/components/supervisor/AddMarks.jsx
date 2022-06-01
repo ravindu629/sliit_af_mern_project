@@ -74,7 +74,7 @@ function AddMarks() {
 
         <div className="form-group row">
             <label for="faname" className="col-sm-2 col-form-label">
-          Faculty name
+          Document name
             </label>
             <div className="col-sm-10">
               <input
@@ -149,8 +149,9 @@ function AddMarks() {
             </label>
             <div className="col-sm-10">
               <input
-                type="number"
+                type="tel"
                 className="form-control"
+                maxlength="3"
                 id="marks"
                 name="marks"
                 placeholder="enter marks"
