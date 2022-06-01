@@ -2,13 +2,13 @@ const express = require("express");
 const router = express.Router();
 const {
     addResearchTopic,
-    getRresearchTopics,
+    getResearchTopics,
     getResearchTopic,
     updateResearchTopic,
     removeResearchTopic,
 } = require("../controllers/ResearchTopic.controller");
 
-router.get("/", getRresearchTopics);
+router.get("/", getResearchTopics);
 
 router.get("/:id", getResearchTopic);
 

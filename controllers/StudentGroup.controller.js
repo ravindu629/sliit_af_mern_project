@@ -15,7 +15,7 @@ const addStudentGroup = (req, res) => {
         member3Name,
     } = req.body;
 
-    const studentGroup = new StudentGroup({
+    const studentGroup = new StudentGroups({
         groupID,
         groupName,
         leaderITNum,
@@ -54,7 +54,7 @@ const getStudentGroup = async (req, res) => {
     const ThegroupID = req.params.id;
 
     try {
-        const studentGroup = await StudentGroup.findById(ThegroupID);
+        const studentGroup = await StudentGroups.findById(ThegroupID);
         res.json(studentGroup);
     } catch (error) {
         res.status(400).json(error);
@@ -66,7 +66,7 @@ const updateStudentGroup = async (req, res) => {
     const ThegroupID = req.params.id;
 
     try {
-        const group = await StudentGroup.findById(ThegroupID);
+        const group = await StudentGroups.findById(ThegroupID);
 
         if (!group) {
             return res.status(404).json("There is no that group to update");
@@ -86,7 +86,7 @@ const updateStudentGroup = async (req, res) => {
             member3Name,
         } = req.body;
 
-        const updatedGroup = await StudentGroup.findByIdAndUpdate(ThegroupID, {
+        const updatedGroup = await StudentGroups.findByIdAndUpdate(ThegroupID, {
             groupID,
             groupName,
             leaderITNum,
@@ -117,7 +117,7 @@ const removeStudentGroup = async (req, res) => {
             return res.status(404).json("There is no such a group to delete");
         }
 
-        const removedGroup = await StudentGroup.findByIdAndDelete(ThegroupID);
+        const removedGroup = await StudentGroups.findByIdAndDelete(ThegroupID);
         res.status(200).json(removedGroup);
     } catch (error) {
         res.status(400).json(error.message);

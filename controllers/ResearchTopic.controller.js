@@ -1,8 +1,9 @@
-const StudentGroups = require("../models/ResearchTopic.model");
+const ResearchTopic = require("../models/ResearchTopic.model");
 
 const addResearchTopic = (req, res) => {
     const {
         groupID,
+        groupName,
         leaderITNum,
         topicName,
         reqSupervisor,
@@ -11,6 +12,7 @@ const addResearchTopic = (req, res) => {
 
     const researchTopic = new ResearchTopic({
         groupID,
+        groupName,
         leaderITNum,
         topicName,
         reqSupervisor,
@@ -29,9 +31,9 @@ const addResearchTopic = (req, res) => {
 
 
 //View Research Topics
-const getRresearchTopics = async (req, res) => {
+const getResearchTopics = async (req, res) => {
     try {
-        const researchTopics = await ResearchTopics.find();
+        const researchTopics = await ResearchTopic.find();
         res.json(researchTopics);
     } catch (error) {
         res.status(400).json(error);
@@ -40,22 +42,22 @@ const getRresearchTopics = async (req, res) => {
 
 //View unique Research Topic
 const getResearchTopic = async (req, res) => {
-    const ThegroupID = req.params.id;
+    const ResarchTopicID = req.params.id;
 
     try {
-        const researchTopic = await ResearchTopic.findById(ThegroupID);
+        const researchTopic = await ResearchTopic.findById(ResarchTopicID);
         res.json(researchTopic);
     } catch (error) {
         res.status(400).json(error);
     }
 };
 
-//Update Student Group
+//Update Research Topic
 const updateResearchTopic = async (req, res) => {
-    const ThegroupID = req.params.id;
+    const ResarchTopicID = req.params.id;
 
     try {
-        const topic = await ResearchTopic.findById(ThegroupID);
+        const topic = await ResearchTopic.findById(ResarchTopicID);
 
         if (!topic) {
             return res.status(404).json("There is no that Research Topic for update");
@@ -63,14 +65,16 @@ const updateResearchTopic = async (req, res) => {
 
         const {
             groupID,
+            groupName,
             leaderITNum,
             topicName,
             reqSupervisor,
             reqCoSupervisor,
         } = req.body;
 
-        const updatedResearchTopic = await ResearchTopic.findByIdAndUpdate(ThegroupID, {
+        const updatedResearchTopic = await ResearchTopic.findByIdAndUpdate(ResarchTopicID, {
             groupID,
+            groupName,
             leaderITNum,
             topicName,
             reqSupervisor,
@@ -85,16 +89,16 @@ const updateResearchTopic = async (req, res) => {
 
 //Delete Student Group
 const removeResearchTopic = async (req, res) => {
-    const ThegroupID = req.params.id;
+    const ResarchTopicID = req.params.id;
 
     try {
-        const topic = await ResearchTopic.findById(ThegroupID);
+        const topic = await ResearchTopic.findById(ResarchTopicID);
 
         if (!topic) {
             return res.status(404).json("There is no such a research topic to delete");
         }
 
-        const removedResearchTopic = await ResearchTopic.findByIdAndDelete(ThegroupID);
+        const removedResearchTopic = await ResearchTopic.findByIdAndDelete(ResarchTopicID);
         res.status(200).json(removedResearchTopic);
     } catch (error) {
         res.status(400).json(error.message);
@@ -103,7 +107,7 @@ const removeResearchTopic = async (req, res) => {
 
 module.exports = {
     addResearchTopic,
-    getRresearchTopics,
+    getResearchTopics,
     getResearchTopic,
     updateResearchTopic,
     removeResearchTopic,

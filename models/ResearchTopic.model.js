@@ -9,6 +9,7 @@ const researchTopicSchema = new Schema({
     unique: true,
     index: true,
   },
+  groupName: String,
   leaderITNum: {
     type: String,
     required: true,
