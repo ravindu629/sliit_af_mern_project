@@ -2,16 +2,52 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const studentGroupSchema = new Schema({
-  groupID:String,
-  groupName:String,
-  leaderITNum: String,
+  groupID: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+    index: true,
+  },
+  groupName: String,
+  leaderITNum: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+    index: true,
+  },
   leaderName: String,
-  leaderEmail: String,
-  member1ITNum: String,
+  leaderEmail: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+    index: true,
+  },
+  member1ITNum: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+    index: true,
+  },
   member1Name: String,
-  member2ITNum: String,
+  member2ITNum: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+    index: true,
+  },
   member2Name: String,
-  member3ITNum: String,
+  member3ITNum: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+    index: true,
+  },
   member3Name: String,
 });
 
