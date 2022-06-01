@@ -207,6 +207,25 @@ footer p {
   font-weight: bold;
 }
 
+.SupervisorSupportServices {
+  margin-top: -33.5%;
+  margin-left: 72%;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background-color: #5d6763;
+  border-radius: 30px;
+  color: white;
+}
+.SuperServicesH2 {
+  text-align: center;
+  color: red;
+  padding-top: 34px;
+}
+.updateBtn {
+  margin-right: 100px;
+
+}
 /*--------------Student Group Page Css---------------*/
 .stGroupPageBtn {
   background-color: #4caf50;
@@ -239,8 +258,8 @@ footer p {
 }
 
 .btn-alignment{
-  margin-left:650px; 
-}
+  margin-left:650px;} 
+
 
 
 /*--------------Research Topic Page Css---------------*/
@@ -266,5 +285,7 @@ footer p {
   background-color: #149aed;
   color: white;
 }
+
+
 
 

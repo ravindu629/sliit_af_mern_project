@@ -5,15 +5,15 @@ export default function SelectChat(){
     
 return(
 
-    <div style={{ paddingLeft: "400px", paddingTop: "80px" }}>
+    <div style={{ paddingLeft: "570px", paddingTop: "80px" }}>
      
     <h1 > Chats </h1>
 
     <div className="navItem" >
     <a href="">
-      <button
+      <button 
         type="button"
-        className="btn btn-secondary menuBtn"
+        class="btn btn-primary btn-lg btn-block"
         style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
       >
         Chat with staff members
@@ -22,10 +22,10 @@ return(
   </div>
 
   <div className="navItem" >
-    <a href="">
+    <a href="https://chat.whatsapp.com/IeWqV057yWq7k4z0taEf7U">
       <button
         type="button"
-        className="btn btn-secondary menuBtn"
+        class="btn btn-primary btn-lg btn-block"
         style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
       >
         Chat with students
