@@ -1,13 +1,12 @@
-const Student = require("../models/StudentGroup.model");
-
+const StudentGroups = require("../models/StudentGroup.model");
 
 const addStudentGroup = (req, res) => {
     const {
         groupID,
         groupName,
-        leaderEmail,
         leaderITNum,
         leaderName,
+        leaderEmail,
         member1ITNum,
         member1Name,
         member2ITNum,
@@ -19,9 +18,9 @@ const addStudentGroup = (req, res) => {
     const studentGroup = new StudentGroup({
         groupID,
         groupName,
-        leaderEmail,
         leaderITNum,
         leaderName,
+        leaderEmail,
         member1ITNum,
         member1Name,
         member2ITNum,
@@ -52,10 +51,10 @@ const getStudentGroups = async (req, res) => {
 
 //View unique student group
 const getStudentGroup = async (req, res) => {
-    const groupID = req.params.id;
+    const ThegroupID = req.params.id;
 
     try {
-        const studentGroup = await StudentGroup.findById(groupID);
+        const studentGroup = await StudentGroup.findById(ThegroupID);
         res.json(studentGroup);
     } catch (error) {
         res.status(400).json(error);
@@ -64,10 +63,10 @@ const getStudentGroup = async (req, res) => {
 
 //Update Student Group
 const updateStudentGroup = async (req, res) => {
-    const groupID = req.params.id;
+    const ThegroupID = req.params.id;
 
     try {
-        const group = await StudentGroup.findById(groupID);
+        const group = await StudentGroup.findById(ThegroupID);
 
         if (!group) {
             return res.status(404).json("There is no that group to update");
@@ -76,9 +75,9 @@ const updateStudentGroup = async (req, res) => {
         const {
             groupID,
             groupName,
-            leaderEmail,
             leaderITNum,
             leaderName,
+            leaderEmail,
             member1ITNum,
             member1Name,
             member2ITNum,
@@ -87,12 +86,12 @@ const updateStudentGroup = async (req, res) => {
             member3Name,
         } = req.body;
 
-        const updatedGroup = await StudentGroup.findByIdAndUpdate(groupID, {
+        const updatedGroup = await StudentGroup.findByIdAndUpdate(ThegroupID, {
             groupID,
             groupName,
-            leaderEmail,
             leaderITNum,
             leaderName,
+            leaderEmail,
             member1ITNum,
             member1Name,
             member2ITNum,
@@ -109,16 +108,16 @@ const updateStudentGroup = async (req, res) => {
 
 //Delete Student Group
 const removeStudentGroup = async (req, res) => {
-    const groupID = req.params.id;
+    const ThegroupID = req.params.id;
 
     try {
-        const group = await StudentGroup.findById(groupID);
+        const group = await StudentGroup.findById(ThegroupID);
 
         if (!group) {
             return res.status(404).json("There is no such a group to delete");
         }
 
-        const removedGroup = await StudentGroup.findByIdAndDelete(groupID);
+        const removedGroup = await StudentGroup.findByIdAndDelete(ThegroupID);
         res.status(200).json(removedGroup);
     } catch (error) {
         res.status(400).json(error.message);

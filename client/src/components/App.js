@@ -39,6 +39,8 @@ import AFpage from "./students/AFpage";
 //Student Group page navigatiom
 import StudentGroup from "./students/StudentGroup";
 import CreateStudentGroup from "./students/CreateStudentGroup";
+import UpdateStudentGroup from "./students/UpdateStudentGroup";
+
 
 function App() {
   return (
@@ -60,8 +62,9 @@ function App() {
 
           <Route path="/StudentMainPage" element={<StudentMainPage />} />
           <Route path="/AFpage" element={<AFpage />} />
-          <Route path="/StudentGroup" element={<StudentGroup />} />
+          <Route path="/studentGroup" element={<StudentGroup />} />
           <Route path="/CreateStudentGroup" element={<CreateStudentGroup />} />
+          <Route path="/updateStudentGroup/:id" element={<UpdateStudentGroup />} />
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
