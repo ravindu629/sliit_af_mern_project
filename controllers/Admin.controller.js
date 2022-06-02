@@ -33,14 +33,11 @@ const getAdmins = async (req, res) => {
 };
 
 const getAdmin = async (req, res) => {
-  const userId = req.params.id;
+  const admId = req.params.id;
 
-  try {
-    const admin = await Admin.findById(userId);
-    res.json(admin);
-  } catch (error) {
-    res.status(400).json(error);
-  }
+  const foundAdmin = await Admin.findOne({ adminId: admId });
+
+  res.json(foundAdmin);
 };
 
 const updateAdmin = async (req, res) => {

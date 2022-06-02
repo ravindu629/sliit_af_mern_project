@@ -55,8 +55,8 @@ footer p {
 }
 
 .formStyle {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 300px;
+  margin-right: 300px;
   padding-top: 20px;
 }
 
@@ -80,16 +80,12 @@ footer p {
   margin-left: 20px;
 }
 
-
-
 /* Supervicer main page*/
-.img-SuperviceMain{
+.img-SuperviceMain {
   width: 1200px;
   height: 100px;
   margin-left: 1px;
-
 }
-
 
 .stMainPageBtn {
   background-color: #5d6763;
@@ -224,7 +220,6 @@ footer p {
 }
 .updateBtn {
   margin-right: 100px;
-
 }
 /*--------------Student Group Page Css---------------*/
 .stGroupPageBtn {
@@ -257,10 +252,9 @@ footer p {
   padding-top: 20px;
 }
 
-.btn-alignment{
-  margin-left:650px;} 
-
-
+.btn-alignment {
+  margin-left: 650px;
+}
 
 /*--------------Research Topic Page Css---------------*/
 .reserchTopicPageBtn {
@@ -286,15 +280,16 @@ footer p {
   color: white;
 }
 
-.button4:hover{
+.button4:hover {
   background-color: #149aed;
   color: white;
 }
 
-.button4{
+.button4 {
   width: 200px;
   padding-top: 6px;
 }
+
 
 /*--------------View Marks Navigation Page Css---------------*/
 .ViewMarksMenu {
@@ -330,4 +325,9 @@ footer p {
   color: white;
 }
 
+.addmarkSubBtn{
 
+
+  margin-left:890px; 
+
+}
