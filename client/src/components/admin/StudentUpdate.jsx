@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useParams } from "react-router";
 import "../App.css";
+import UpgradeIcon from "@mui/icons-material/Upgrade";
 
 function StudentUpdate() {
   const [user, setUser] = useState({
@@ -205,7 +206,8 @@ function StudentUpdate() {
           <div class="form-group row">
             <div class="col-sm-10">
               <button type="submit" class="btn btn-primary">
-                Update
+                <UpgradeIcon />
+                &nbsp;&nbsp; Update
               </button>
             </div>
           </div>

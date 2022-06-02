@@ -4,73 +4,65 @@ import "../App.css";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import EditIcon from "@mui/icons-material/Edit";
 
-function Students() {
-  const [users, setUsers] = useState([]);
+function AllSubmissions() {
+  const [subs, setSubs] = useState([]);
 
   useEffect(() => {
-    function getUsers() {
+    function getSubs() {
       axios
-        .get("http://localhost:5000/api/students")
+        .get("http://localhost:5000/api/submissions")
         .then((res) => {
-          setUsers(res.data);
+          setSubs(res.data);
         })
         .catch((err) => {
           alert(err.message);
         });
     }
-    getUsers();
+    getSubs();
   }, []);
 
-  function deleteUser(_id) {
+  function deleteSub(_id) {
     axios
-      .delete("http://localhost:5000/api/students/" + _id)
+      .delete("http://localhost:5000/api/submissions/" + _id)
       .then((res) => {
         console.log(res.data);
 
-        alert("user deleted");
+        alert("submission deleted");
       })
       .catch((err) => {
         alert(err);
       });
 
-    setUsers(users.filter((user) => user._id !== _id));
+    setSubs(subs.filter((sub) => sub._id !== _id));
   }
 
   return (
-    <div className="userTables">
+    <div className="markingTable">
       <h2 style={{ fontSize: "150%", fontWeight: "bold", textAlign: "center" }}>
-        All Students Details
+        All Submissions Details
       </h2>
       <table className="table table-bordered">
-        <thead className="table-dark">
+        <thead className="table-light">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Student ID</th>
             <th scope="col">Faculty</th>
-            <th scope="col">NIC</th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Email</th>
+            <th scope="col">Due date</th>
+            <th scope="col">Grading Status</th>
             <th></th>
           </tr>
         </thead>
         <tbody className="table-light">
-          {users.map((user, index) => {
+          {subs.map((sub, index) => {
             return (
-              <tr key={user._id}>
+              <tr key={sub._id}>
                 <td>{index + 1}</td>
-                <td>{user.fName}</td>
-                <td>{user.lName}</td>
-                <td>{user.studentId}</td>
-                <td>{user.faculty}</td>
-                <td>{user.nic}</td>
-                <td>{user.phoneNumber}</td>
-                <td>{user.email}</td>
+                <td>{sub.faculty}</td>
+                <td>{sub.dueDate}</td>
+                <td>{sub.gradingStatus}</td>
                 <td>
                   <a
                     className="btn btn-warning"
-                    href={`/updateStudent/${user._id}`}
+                    href={`/updateSubmission/${sub._id}`}
                   >
                     <EditIcon /> Update
                   </a>
@@ -84,7 +76,7 @@ function Students() {
                           "Are you sure you wish to delete this record?"
                         )
                       )
-                        deleteUser(user._id);
+                        deleteSub(sub._id);
                     }}
                   >
                     <DeleteForeverIcon /> Delete
@@ -99,4 +91,4 @@ function Students() {
   );
 }
 
-export default Students;
+export default AllSubmissions;
