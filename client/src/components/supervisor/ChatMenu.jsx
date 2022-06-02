@@ -7,8 +7,8 @@ return(
 
     <div style={{ paddingLeft: "570px", paddingTop: "80px" }}>
      
-    <h1 > Chats </h1>
-
+    <h1 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chats </h1>
+    <br></br>
     <div className="navItem" >
     <a href="">
       <button 
@@ -20,8 +20,10 @@ return(
       </button>
     </a>
   </div>
+  <br></br>
 
   <div className="navItem" >
+  
     <a href="https://chat.whatsapp.com/IeWqV057yWq7k4z0taEf7U">
       <button
         type="button"
