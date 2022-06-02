@@ -50,6 +50,7 @@ import UpdateResearchTopic from "./students/UpdateResearchTopic";
 //Student View Marks Navigation Page
 import ViewMarksNavPage from "./students/ViewMarksNavPage";
 import ViewDocumentMarks from "./students/ViewDocumentMarks";
+import ViewDocumentMarksReport from "./students/ViewDocumentMarksReport";
 
 
 function App() {
@@ -79,7 +80,8 @@ function App() {
           <Route path="/RegisterResearchTopic" element={<RegisterResearchTopic />} />
           <Route path="/updateResearchTopic/:id" element={<UpdateResearchTopic />} />
           <Route path="/ViewMarksNavPage" element={<ViewMarksNavPage />} />
-          <Route path="/getMarks" element={<ViewDocumentMarks />} />
+          <Route path="/ViewDocumentMarks" element={<ViewDocumentMarks />} />
+          <Route path="/ViewDocumentMarksReport" element={<ViewDocumentMarksReport />} />
 
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
