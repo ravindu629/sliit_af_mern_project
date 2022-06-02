@@ -290,7 +290,43 @@ footer p {
   padding-top: 6px;
 }
 
+
+/*--------------View Marks Navigation Page Css---------------*/
+.ViewMarksMenu {
+  margin-left: 37%;
+  margin-top: 5%;
+  width: 25%;
+  border: 3px solid black;
+  background-color: #5d6763;
+}
+
+.ViewMarkNavButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding-left: 25px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 110%;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 94%;
+  margin-top: 20px;
+  width: 280px;
+  height: 50px;
+  transition-duration: 0.4;
+  font-weight: bold;
+}
+
+.button5:hover{
+  background-color: #149aed;
+  color: white;
+}
+
 .addmarkSubBtn{
+
 
   margin-left:890px; 
 

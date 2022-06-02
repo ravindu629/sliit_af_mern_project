@@ -46,6 +46,11 @@ import ResearchTopic from "./students/ResearchTopic";
 import RegisterResearchTopic from "./students/RegisterResearchTopic";
 import UpdateResearchTopic from "./students/UpdateResearchTopic";
 
+//Student View Marks
+//Student View Marks Navigation Page
+import ViewMarksNavPage from "./students/ViewMarksNavPage";
+import ViewDocumentMarks from "./students/ViewDocumentMarks";
+
 
 function App() {
   return (
@@ -73,7 +78,9 @@ function App() {
           <Route path="/researchTopic" element={<ResearchTopic />} />
           <Route path="/RegisterResearchTopic" element={<RegisterResearchTopic />} />
           <Route path="/updateResearchTopic/:id" element={<UpdateResearchTopic />} />
-          
+          <Route path="/ViewMarksNavPage" element={<ViewMarksNavPage />} />
+          <Route path="/getMarks" element={<ViewDocumentMarks />} />
+
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
