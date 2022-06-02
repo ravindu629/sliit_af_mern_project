@@ -79,7 +79,7 @@ function App() {
           <Route path="/RegisterResearchTopic" element={<RegisterResearchTopic />} />
           <Route path="/updateResearchTopic/:id" element={<UpdateResearchTopic />} />
           <Route path="/ViewMarksNavPage" element={<ViewMarksNavPage />} />
-          <Route path="/getMarks" element={<ViewDocumentMarks />} />
+          <Route path="/ViewDocumentMarks" element={<ViewDocumentMarks />} />
 
 
           <Route path="/supMenu" element={<SupervisorMenu />} />

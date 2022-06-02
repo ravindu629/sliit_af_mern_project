@@ -9,7 +9,7 @@ import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
           <h2 style={{ fontWeight: "bold" }}>View Marks Menu</h2><br/>
           
           <div className="navItem">
-            <a href="/getMarks">
+            <a href="/ViewDocumentMarks">
               <button type="button" className="ViewMarkNavButton button5">
                 <ArrowCircleRightIcon />
                 &nbsp;&nbsp;&nbsp;&nbsp; Document Marks
