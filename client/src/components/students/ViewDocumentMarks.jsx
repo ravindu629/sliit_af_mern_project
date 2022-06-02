@@ -23,7 +23,15 @@ import "../App.css";
   
       return (
         <div className="all">
-          <button  class="reserchTopicPageBtn button4" onClick={window.print}> 📋 Download PDF</button>  
+          <button  class="reserchTopicPageBtn button4" onClick={window.print}> 📋 Download PDF</button>      
+         
+            <a href="/ViewDocumentMarksReport">
+              <button type="button" className="ViewMarkNavButton button6">
+               ⭐ Student Evaluation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Progress
+              </button>
+            </a>
+         
+
         <h2 className="heading">All Marks Details</h2>
 
         <br></br>
@@ -62,9 +70,6 @@ import "../App.css";
       </div>
 
       );
-
-
-
 }
 
 export default AllMarks;
