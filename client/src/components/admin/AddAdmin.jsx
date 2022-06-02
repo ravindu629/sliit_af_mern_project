@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
+import AddIcon from "@mui/icons-material/Add";
 
 function AddAdmin() {
   const [valid, setValid] = useState(false);
@@ -180,7 +181,8 @@ function AddAdmin() {
           <div className="form-group row">
             <div className="col-sm-10">
               <button type="submit" className="btn btn-primary">
-                Submit
+                <AddIcon />
+                &nbsp;&nbsp; Submit
               </button>
             </div>
           </div>

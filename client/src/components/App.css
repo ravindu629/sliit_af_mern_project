@@ -69,6 +69,10 @@ footer p {
   margin: 30px 30px 120px;
 }
 
+.userTables {
+  margin: 30px 120px 120px;
+}
+
 /*Student Main Page*/
 .StdLeftContent {
   margin-left: 200px;
@@ -186,12 +190,42 @@ footer p {
 .adminMenu {
   margin-left: 20%;
   margin-top: 5%;
-  width: 25%;
+  width: 27%;
   border: 3px solid black;
+}
+
+.markingForm {
+  width: 30%;
+  margin-top: 120px;
+  margin-left: 100px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.markingTable {
+  margin-left: 710px;
+  margin-right: 90px;
+  margin-top: -450px;
+  margin-bottom: 200px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.facultyNotices {
+  margin-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.mschms {
+  margin-top: 50px;
+  padding-left: 260px;
+  padding-right: 260px;
 }
 
 .admMenu {
   padding: 30px 40px;
+  background-color: lightyellow;
 }
 
 .menuBtn {
@@ -199,7 +233,7 @@ footer p {
   margin-top: 20px;
   height: 50px;
   text-align: left;
-  font-size: 110%;
+  font-size: 120%;
   font-weight: bold;
 }
 
@@ -298,7 +332,6 @@ footer p {
   margin-left: 950px;
 }
 
-
 /*--------------View Marks Navigation Page Css---------------*/
 .ViewMarksMenu {
   margin-left: 37%;
@@ -328,15 +361,14 @@ footer p {
   font-weight: bold;
 }
 
-.button5:hover{
+.button5:hover {
   background-color: #149aed;
   color: white;
 }
 
-.addmarkSubBtn{
-  margin-left:890px; 
+.addmarkSubBtn {
+  margin-left: 890px;
 }
-
 
 /*------------------View Document Marks----------------*/
 .button6 {

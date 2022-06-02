@@ -21,11 +21,6 @@ import UpdateMarks from "./supervisor/UpdateMarks";
 import ChatMenu from "./supervisor/ChatMenu";
 import Report from "./supervisor/Report";
 
-
-
-
-
-
 import AdminMenu from "./admin/AdminMenu";
 import ManageUsers from "./admin/ManageUsers";
 import StudentUpdate from "./admin/StudentUpdate";
@@ -52,6 +47,14 @@ import ViewMarksNavPage from "./students/ViewMarksNavPage";
 import ViewDocumentMarks from "./students/ViewDocumentMarks";
 import ViewDocumentMarksReport from "./students/ViewDocumentMarksReport";
 
+import CreateMarking from "./admin/CreateMarking";
+import FacultyNotices from "./admin/FacultyNotices";
+import ITSchema from "./admin/ITScheme";
+import BussnessSchema from "./admin/BussnessScheme";
+import EngScheme from "./admin/EngScheme";
+import Submission from "./admin/Submission";
+import AllSubmissions from "./admin/AllSubmissions";
+import SubmissionUpdate from "./admin/SubmissionUpdate";
 
 function App() {
   return (
@@ -75,14 +78,25 @@ function App() {
           <Route path="/AFpage" element={<AFpage />} />
           <Route path="/studentGroup" element={<StudentGroup />} />
           <Route path="/CreateStudentGroup" element={<CreateStudentGroup />} />
-          <Route path="/updateStudentGroup/:id" element={<UpdateStudentGroup />} />
+          <Route
+            path="/updateStudentGroup/:id"
+            element={<UpdateStudentGroup />}
+          />
           <Route path="/researchTopic" element={<ResearchTopic />} />
-          <Route path="/RegisterResearchTopic" element={<RegisterResearchTopic />} />
-          <Route path="/updateResearchTopic/:id" element={<UpdateResearchTopic />} />
+          <Route
+            path="/RegisterResearchTopic"
+            element={<RegisterResearchTopic />}
+          />
+          <Route
+            path="/updateResearchTopic/:id"
+            element={<UpdateResearchTopic />}
+          />
           <Route path="/ViewMarksNavPage" element={<ViewMarksNavPage />} />
           <Route path="/ViewDocumentMarks" element={<ViewDocumentMarks />} />
-          <Route path="/ViewDocumentMarksReport" element={<ViewDocumentMarksReport />} />
-
+          <Route
+            path="/ViewDocumentMarksReport"
+            element={<ViewDocumentMarksReport />}
+          />
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
@@ -94,18 +108,19 @@ function App() {
           <Route path="/ChatMenu" element={<ChatMenu />} />
           <Route path="/Report" element={<Report />} />
 
-
-          
-
-
-
-
           <Route path="/adminMenu" element={<AdminMenu />} />
           <Route path="/manageUsers" element={<ManageUsers />} />
           <Route path="/updateStudent/:id" element={<StudentUpdate />} />
           <Route path="/updateStaffMember/:id" element={<StaffUpdate />} />
           <Route path="/updateAdmin/:id" element={<AdminUpdate />} />
-
+          <Route path="/createMarking" element={<CreateMarking />} />
+          <Route path="/facultyNotices" element={<FacultyNotices />} />
+          <Route path="/itScheme" element={<ITSchema />} />
+          <Route path="/bussnessScheme" element={<BussnessSchema />} />
+          <Route path="/engScheme" element={<EngScheme />} />
+          <Route path="/submission" element={<Submission />} />
+          <Route path="/allSubmissions" element={<AllSubmissions />} />
+          <Route path="/updateSubmission/:id" element={<SubmissionUpdate />} />
         </Routes>
 
         <Footer />

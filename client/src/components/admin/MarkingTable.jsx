@@ -2,77 +2,66 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../App.css";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
-import EditIcon from "@mui/icons-material/Edit";
 
-function Admins() {
-  const [users, setUsers] = useState([]);
+function MarkingTable(props) {
+  const [mSchema, setMSchema] = useState([]);
 
   useEffect(() => {
-    function getUsers() {
+    function getMSchema() {
       axios
-        .get("http://localhost:5000/api/admins")
+        .get("http://localhost:5000/api/markingSchemas")
         .then((res) => {
-          setUsers(res.data);
+          const results = res.data;
+          setMSchema(
+            results.filter((result) => result.faculty === props.section)
+          );
         })
         .catch((err) => {
           alert(err.message);
         });
     }
-    getUsers();
+    getMSchema();
   }, []);
 
-  function deleteUser(_id) {
+  function deleteMarking(_id) {
     axios
-      .delete("http://localhost:5000/api/admins/" + _id)
+      .delete("http://localhost:5000/api/markingSchemas/" + _id)
       .then((res) => {
         console.log(res.data);
 
-        alert("admin deleted");
+        alert("marking deleted");
       })
       .catch((err) => {
         alert(err);
       });
 
-    setUsers(users.filter((user) => user._id !== _id));
+    setMSchema(mSchema.filter((marking) => marking._id !== _id));
   }
 
   return (
-    <div className="userTables">
+    <div className="">
       <h2 style={{ fontSize: "150%", fontWeight: "bold", textAlign: "center" }}>
-        All Admins Details
+        {props.section} Students Marking Schema
       </h2>
       <table className="table table-bordered">
-        <thead className="table-dark">
+        <thead className="table-light">
           <tr>
             <th scope="col">No</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col">Admin ID</th>
-            <th scope="col">NIC</th>
-            <th scope="col">Phone Number</th>
-            <th scope="col">Email</th>
+            <th scope="col">Marking Criteria</th>
+            <th scope="col">Description</th>
+            <th scope="col">Marking Distribution</th>
             <th></th>
           </tr>
         </thead>
         <tbody className="table-light">
-          {users.map((user, index) => {
+          {mSchema.map((marking, index) => {
             return (
-              <tr key={user._id}>
+              <tr key={marking._id}>
                 <td>{index + 1}</td>
-                <td>{user.fName}</td>
-                <td>{user.lName}</td>
-                <td>{user.adminId}</td>
-                <td>{user.nic}</td>
-                <td>{user.phoneNumber}</td>
-                <td>{user.email}</td>
+                <td>{marking.criteria}</td>
+                <td>{marking.desc}</td>
+                <td>{marking.marks}</td>
                 <td>
-                  <a
-                    className="btn btn-warning"
-                    href={`/updateAdmin/${user._id}`}
-                  >
-                    <EditIcon /> Update
-                  </a>
-                  &nbsp;&nbsp;
                   <a
                     className="btn btn-danger"
                     href="#"
@@ -82,7 +71,7 @@ function Admins() {
                           "Are you sure you wish to delete this record?"
                         )
                       )
-                        deleteUser(user._id);
+                        deleteMarking(marking._id);
                     }}
                   >
                     <DeleteForeverIcon /> Delete
@@ -97,4 +86,4 @@ function Admins() {
   );
 }
 
-export default Admins;
+export default MarkingTable;

@@ -8,29 +8,29 @@ import image from "../images/admin.jpg";
 export default function AdminMenu() {
   const location = useLocation();
 
-  const [admin, setAdmin] = useState({
-    fName: "",
-    lName: "",
-    adminId: "",
-    nic: "",
-    phoneNumber: "",
-    email: "",
-    password: "",
-  });
+  // const [admin, setAdmin] = useState({
+  //   fName: "",
+  //   lName: "",
+  //   adminId: "",
+  //   nic: "",
+  //   phoneNumber: "",
+  //   email: "",
+  //   password: "",
+  // });
 
-  useEffect(() => {
-    function getAdmin() {
-      axios
-        .get("http://localhost:5000/api/admins/" + location.state.admId)
-        .then((res) => {
-          setAdmin(res.data);
-        })
-        .catch((err) => {
-          alert(err.message);
-        });
-    }
-    getAdmin();
-  }, []);
+  // useEffect(() => {
+  //   function getAdmin() {
+  //     axios
+  //       .get("http://localhost:5000/api/admins/" + location.state.admId)
+  //       .then((res) => {
+  //         setAdmin(res.data);
+  //       })
+  //       .catch((err) => {
+  //         alert(err.message);
+  //       });
+  //   }
+  //   getAdmin();
+  // }, []);
 
   return (
     <div>
@@ -39,7 +39,7 @@ export default function AdminMenu() {
           <h2 style={{ fontWeight: "bold" }}>Admin Menu</h2>
           <div className="navItem">
             <a href="/manageUsers">
-              <button type="button" className="btn btn-secondary menuBtn">
+              <button type="button" className="btn btn-outline-primary menuBtn">
                 <ArrowCircleRightIcon />
                 &nbsp;&nbsp;&nbsp;&nbsp; Manage Users
               </button>
@@ -47,23 +47,23 @@ export default function AdminMenu() {
           </div>
           <div className="navItem">
             <a href="/addAdmin">
-              <button type="button" className="btn btn-secondary menuBtn">
+              <button type="button" className="btn btn-outline-primary menuBtn">
                 <ArrowCircleRightIcon />
                 &nbsp;&nbsp;&nbsp;&nbsp; Add a new Admin
               </button>
             </a>
           </div>
           <div className="navItem">
-            <a href="">
-              <button type="button" className="btn btn-secondary menuBtn">
+            <a href="/submission">
+              <button type="button" className="btn btn-outline-primary menuBtn">
                 <ArrowCircleRightIcon />
                 &nbsp;&nbsp;&nbsp;&nbsp; Create submission types
               </button>
             </a>
           </div>
           <div className="navItem">
-            <a href="">
-              <button type="button" className="btn btn-secondary menuBtn">
+            <a href="/createMarking">
+              <button type="button" className="btn btn-outline-primary menuBtn">
                 <ArrowCircleRightIcon />
                 &nbsp;&nbsp;&nbsp;&nbsp; Create marking schemes
               </button>
@@ -74,14 +74,14 @@ export default function AdminMenu() {
       <div className="">
         <div
           style={{
-            width: "20%",
+            width: "25%",
             position: "relative",
             marginTop: "-420px",
-            marginLeft: "55%",
+            marginLeft: "50%",
           }}
         >
           <img className="bgImg" src={image} />
-          <div
+          {/* <div
             style={{
               paddingLeft: "120px",
               marginTop: "15px",
@@ -97,7 +97,7 @@ export default function AdminMenu() {
             </p>
             <p>{admin.email}</p>
             <p>{admin.phoneNumber}</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

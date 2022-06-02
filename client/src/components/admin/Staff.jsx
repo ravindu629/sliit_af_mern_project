@@ -37,8 +37,10 @@ function Staff() {
   }
 
   return (
-    <div className="all">
-      <h2 className="heading">All Staff Members Details</h2>
+    <div className="userTables">
+      <h2 style={{ fontSize: "150%", fontWeight: "bold", textAlign: "center" }}>
+        All Staff Members Details
+      </h2>
       <table className="table table-bordered">
         <thead className="table-dark">
           <tr>
