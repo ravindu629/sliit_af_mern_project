@@ -200,9 +200,13 @@ function AddMarks() {
           </div>
 <br></br>
           <div className="form-group row">
-            <div className="col-sm-10">
+        
+            <div className="addmarkSubBtn">
+              
               <button type="submit" className="btn btn-primary">
+              &nbsp;&nbsp;
                 Submit
+                &nbsp;&nbsp;
               </button>
             </div>
           </div>

@@ -58,7 +58,7 @@ return (
               );
             })}
             <br></br><br></br><br></br>
-            <button  class="btn btn-success" onClick={window.print}>Print Report </button>
+            <button  class="btn btn-warning" onClick={window.print}>Print Report </button>
           </tbody>
         
         </table>
