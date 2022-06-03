@@ -46,6 +46,7 @@ import UpdateResearchTopic from "./students/UpdateResearchTopic";
 import ViewMarksNavPage from "./students/ViewMarksNavPage";
 import ViewDocumentMarks from "./students/ViewDocumentMarks";
 import ViewDocumentMarksReport from "./students/ViewDocumentMarksReport";
+import ViewStatusOfTopic from "./students/ViewStatusOfTopic";
 
 import CreateMarking from "./admin/CreateMarking";
 import FacultyNotices from "./admin/FacultyNotices";
@@ -93,10 +94,16 @@ function App() {
           />
           <Route path="/ViewMarksNavPage" element={<ViewMarksNavPage />} />
           <Route path="/ViewDocumentMarks" element={<ViewDocumentMarks />} />
+
+          <Route path="/ViewDocumentMarksReport" element={<ViewDocumentMarksReport />} />
+          <Route path="/ViewStatusOfTopic" element={<ViewStatusOfTopic />} />
+
+
           <Route
             path="/ViewDocumentMarksReport"
             element={<ViewDocumentMarksReport />}
           />
+
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
           <Route path="/panelMenu" element={<PanelMemberMenu />} />

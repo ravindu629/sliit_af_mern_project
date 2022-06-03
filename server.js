@@ -39,6 +39,7 @@ app.use("/api/markingSchemas", require("./routes/MarkingSchema.route"));
 app.use("/api/submissions", require("./routes/Submission.route"));
 
 app.use("/api/addMarks", require("./routes/SupervisorMarks.route"));
+app.use("/api/acceptTopic", require("./routes/AcceptTopic.route"));
 
 app.use("/api/studentGroups", require("./routes/StudentGroup.route"));
 app.use("/api/researchTopics", require("./routes/ResearchTopic.route"));

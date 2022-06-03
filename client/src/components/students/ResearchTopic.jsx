@@ -26,11 +26,16 @@ export default function ResearchTopic() {
         <div className="all">
             <div>
                 <a href="/RegisterResearchTopic">
-                    <button type="button" className="reserchTopicPageBtn button3">
+                    <button type="button" className="reserchTopicPageBtn button7">
                         <pre> ➕ Register Research Topic</pre>
                     </button>
                 </a>         
                 <button  class="reserchTopicPageBtn button4" onClick={window.print}> 📋 Download PDF</button>   
+                <a href="/ViewStatusOfTopic">
+                    <button type="button" className="reserchTopicPageBtn button7">
+                        <pre> 📝 Status of Research Topic</pre>
+                    </button>
+                </a>   
             </div>
 
             <h2 className="heading">Research Topic Details</h2><br />
