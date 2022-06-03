@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../App.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Document(props) {
   const [upload, setUpload] = useState({
@@ -10,6 +11,8 @@ export default function Document(props) {
     comment: "",
     file: "",
   });
+
+  let navigate = useNavigate();
 
   function sendData(e) {
     e.preventDefault();
@@ -30,12 +33,6 @@ export default function Document(props) {
       .catch((err) => {
         alert(err);
       });
-
-    setUpload({
-      stdId: "",
-      comment: "",
-      file: "",
-    });
   }
 
   function handleChange(event) {
@@ -57,11 +54,13 @@ export default function Document(props) {
     <div>
       <div className="note">
         <form onSubmit={sendData}>
-          <table class="table table-sm">
+          <table class="table table-striped">
             <tbody>
-              <tr style={{ color: "red" }}>
+              <tr>
                 <th scope="row">Faculty</th>
-                <td>{props.fac}</td>
+                <td style={{ color: "red", fontWeight: "bold" }}>
+                  {props.fac}
+                </td>
               </tr>
               <tr>
                 <th scope="row">Grading Status</th>
