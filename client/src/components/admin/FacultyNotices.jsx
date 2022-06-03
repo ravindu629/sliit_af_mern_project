@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
+import UploadDocuments from "./UploadDocuments";
 
 export default function FacultyNotices() {
   let navigate = useNavigate();
@@ -57,6 +58,9 @@ export default function FacultyNotices() {
 
       <div>
         <p>Upload your document/presentation templates </p>
+      </div>
+      <div>
+        <UploadDocuments />
       </div>
     </div>
   );
