@@ -44,6 +44,8 @@ app.use("/api/acceptTopic", require("./routes/AcceptTopic.route"));
 app.use("/api/studentGroups", require("./routes/StudentGroup.route"));
 app.use("/api/researchTopics", require("./routes/ResearchTopic.route"));
 
+app.use("/api/files", require("./routes/Files.route"));
+
 app.listen(port, () => {
   console.log("Server is starting on port " + port);
 });
