@@ -67,7 +67,7 @@ export default function Submission() {
         endIcon={<CreateIcon />}
         onClick={loadAllSubs}
       >
-        View All Submissions
+        View All Submission Types
       </Button>
       <div className="markingForm">
         <p className="heading" style={{ fontSize: "150%", fontWeight: "bold" }}>

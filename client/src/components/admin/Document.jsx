@@ -70,13 +70,9 @@ export default function Document(props) {
                 <th scope="row">Due Date</th>
                 <td>{props.dDate}</td>
               </tr>
-              <tr>
-                <th scope="row">Time Remaining</th>
-                <td>Jacob</td>
-              </tr>
 
               <tr>
-                <th scope="row">Student ID</th>
+                <th scope="row">Group ID</th>
                 <td>
                   <input
                     type="text"
