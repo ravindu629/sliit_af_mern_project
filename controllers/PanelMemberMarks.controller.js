@@ -34,6 +34,7 @@ const GetPMmarks = async(req,res) => {
         res.status(400).json(error);
     }
 };
+//get a mark by id
 const GetPMmark = async (req,res) => {
     const PMmarkID = req.params.id;
     try{
@@ -44,45 +45,64 @@ const GetPMmark = async (req,res) => {
     }
 };
 
-
+//update 
 const updatePMMarks = async (req, res) => {
-    const PMmarkId = req.params.id;
-  
-    try {
-      const PMmark = await PanelMemberMarks.findById(PMmarkId);
-  
-      if (!PMmark) {
-        return res.status(404).json("There is no presentation mark to update");
-      }
-  
-      const {
-        fName,
-        subject,
-        groupId,
-        topic,
-        marks,
-        PMname,
-        feedback,
-      } = req.body;
-  
-      const updatedPMmarks = await PanelMemberMarks.findByIdAndUpdate(PMmarksId, {
-        fName,
-        subject,
-        groupId,
-        topic,
-        marks,
-        PMname,
-        feedback,
-      });
-  
-      res.status(200).json(updatedPMmarks);
-    } catch (error) {
-      res.status(400).json(error.message);
+  const PMmarksId = req.params.id;
+
+  try {
+    const PMmarks = await PanelMemberMarks.findById(PMmarksId);
+
+    if (!PMmarks) {
+      return res.status(404).json("There is no student to update");
     }
-  };
+
+    const {
+      fName,
+      subject,
+      groupId,
+      topic,
+      marks,
+      PMname,
+      feedback,
+    } = req.body;
+
+    const updatedPMMarks = await PanelMemberMarks.findByIdAndUpdate(PMmarksId, {
+      fName,
+      subject,
+      groupId,
+      topic,
+      marks,
+      PMname,
+      feedback,
+    });
+
+    res.status(200).json(updatedPMMarks);
+  } catch (error) {
+    res.status(400).json(error.message);
+  }
+};
+
+// remove marks
+const removePMMarks = async (req, res) => {
+  const  PMmarksId= req.params.id;
+
+  try {
+    const PMmarks = await  PanelMemberMarks.findById(PMmarksId);
+
+    if (!PMmarks) {
+      return res.status(404).json("There is no marks to remove");
+    }
+
+    const removedPMmarks = await PanelMemberMarks.findByIdAndDelete(PMmarksId);
+    res.status(200).json( removedPMmarks);
+  } catch (error) {
+    res.status(400).json(error.message);
+  }
+};
 module.exports = {
     AddPMMarks,
     GetPMmarks,
     GetPMmark,
     updatePMMarks,
+    removePMMarks,
   };

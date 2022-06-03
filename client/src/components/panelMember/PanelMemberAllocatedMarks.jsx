@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import EditIcon from "@mui/icons-material/Edit";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 
 function AllPMmarks(){
     const[PMmark , setMarks] = useState([]);
@@ -9,7 +10,7 @@ function AllPMmarks(){
     useEffect(() => {
         function getPMmarks() {
             axios
-                .get("http://localhost:5000/api/GetPMmarks")
+                .get("http://localhost:5000/api/PanelMember")
                 .then((res) => {
                     setMarks(res.data);
                 })
@@ -19,6 +20,21 @@ function AllPMmarks(){
         }
         getPMmarks();
     }, []);
+
+    function deletePMmarks(_id) {
+      axios
+        .delete("http://localhost:5000/api/PanelMember/" + _id)
+        .then((res) => {
+          console.log(res.data);
+  
+          alert("Details deleted");
+        })
+        .catch((err) => {
+          alert(err);
+        });
+  
+      setUsers(PMmark.filter((PMmark) => PMmark._id !== _id));
+    }
 
     return (
 
@@ -38,6 +54,7 @@ function AllPMmarks(){
               <th scope="col">Marks</th>
               <th scope="col">Feedback</th>
               <th>Update Marks</th>
+              <th>Delete Marks</th>
             </tr>
           </thead>
           <tbody className="table-light">
@@ -60,6 +77,24 @@ function AllPMmarks(){
                     &nbsp;&nbsp; <b>Update</b>
                   </a>
                   </td>
+                  <td>
+                  <a
+                    className="btn btn-danger"
+                    href="#"
+                    onClick={() => {
+                      if (
+                        window.confirm(
+                          "Are you sure you wish to delete this record?"
+                        )
+                      )
+                      deletePMmarks(PMmark._id);
+                    }}
+                  >
+                    <DeleteForeverIcon />
+                    &nbsp;&nbsp; <b>Delete</b>
+                    </a>
+                  </td>
+                  
                 </tr>
                 
               );

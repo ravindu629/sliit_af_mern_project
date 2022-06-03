@@ -39,6 +39,17 @@ export default function PanelMemberMenu() {
         </a>
       </div>
       <div className="navItem">
+        <a href="/PanelMemberMarkByID">
+          <button
+            type="button"
+            className="btn btn-secondary menuBtn"
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+          >
+            Get Presentation Marks By Group ID
+          </button>
+        </a>
+      </div>
+      <div className="navItem">
         <a href="">
           <button
             type="button"

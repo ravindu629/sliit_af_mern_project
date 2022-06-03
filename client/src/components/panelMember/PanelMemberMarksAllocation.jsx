@@ -22,7 +22,7 @@ function addPMMarks(){
         e.preventDefault()
 
         axios
-            .post("http://localhost:5000/api/addPMMarks",PMmark)
+            .post("http://localhost:5000/api/PanelMember",PMmark)
             .then(() => {
                 alert("Marks added");
                 setValid(true);

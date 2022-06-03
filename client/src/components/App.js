@@ -54,7 +54,7 @@ import ViewDocumentMarks from "./students/ViewDocumentMarks";
 //Panel Member functionalities
 import PanelMemberMarksAllocation from "./panelMember/PanelMemberMarksAllocation";
 import PanelMemberAllocatedMarks from "./panelMember/PanelMemberAllocatedMarks";
-import PanelMemberMarkUpdate from "./panelMember/PanelMemberMarkUpdate"
+import PanelMemberMarkUpdate from "./panelMember/PanelMemberMarkUpdate";
 
 function App() {
   return (
