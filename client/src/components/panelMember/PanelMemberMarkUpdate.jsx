@@ -25,7 +25,7 @@ import { useParams } from "react-router";
     useEffect(() => {
       function getPMmark() {
         axios
-          .get(`http://localhost:5000/api/PanelMember/${id}`,)
+          .get(`http://localhost:5000/api/PanelMember/${id}`)
           .then((res) => {
             setMarks(res.data);
           })
@@ -39,9 +39,11 @@ import { useParams } from "react-router";
        
     function updatePMmark(e) {
       e.preventDefault();
+
+      const updatedPMmark = PMmark;
   
       axios
-        .put(`http://localhost:5000/api/PanelMember/${id}`, PMmark)
+        .put(`http://localhost:5000/api/PanelMember/${id}`, updatedPMmark)
         .then(() => {
           alert("marks updated");
           navigate("/PanelMemberAllocatedMarks");
@@ -120,7 +122,7 @@ import { useParams } from "react-router";
                 name=" groupId"
                 placeholder="enter group id"
                 onChange={handleChange}
-                value={PMmark. groupId}
+                value={PMmark.groupId}
                 required
               />
             </div>
@@ -138,7 +140,7 @@ import { useParams } from "react-router";
                 name=" topic"
                 placeholder="enter group id"
                 onChange={handleChange}
-                value={PMmark. topic}
+                value={PMmark.topic}
                 required
               />
             </div>
@@ -156,7 +158,7 @@ import { useParams } from "react-router";
                 name="marks"
                 placeholder="enter marks"
                 onChange={handleChange}
-                value={PMmark. marks}
+                value={PMmark.marks}
                 required
               />
             </div>
