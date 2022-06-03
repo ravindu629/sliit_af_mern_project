@@ -22,7 +22,9 @@ export default function FacultyNotices() {
 
   return (
     <div className="facultyNotices">
-      <p>View and Download Marking Schemes</p>
+      <p style={{ fontStyle: "italic", fontSize: "130%", fontWeight: "bold" }}>
+        View and Download Marking Schemes
+      </p>
       <div>
         <Button
           variant="contained"
@@ -57,7 +59,12 @@ export default function FacultyNotices() {
       </div>
 
       <div>
-        <p>Upload your document/presentation templates </p>
+        <p
+          style={{ fontStyle: "italic", fontSize: "130%", fontWeight: "bold" }}
+        >
+          Upload your document/presentation templates to the relevant faculty
+          submission form
+        </p>
       </div>
       <div>
         <UploadDocuments />

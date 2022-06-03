@@ -2,8 +2,11 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const fileSchema = new Schema({
-  fName: String,
-  photo: String,
+  stdId: String,
+  file: String,
+  comment: String,
+  faculty: String,
+  gradingStatus: String,
 });
 
 module.exports = File = mongoose.model("File", fileSchema);

@@ -7,7 +7,7 @@ const File = require("../models/File.model");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "images");
+    cb(null, "uploadedFiles");
   },
   filename: function (req, file, cb) {
     cb(null, uuid4() + "-" + Date.now() + path.extname(file.originalname));
@@ -30,16 +30,22 @@ const fileFilter = (req, file, cb) => {
 
 let upload = multer({ storage, fileFilter });
 
-router.route("/").post(upload.single("photo"), (req, res) => {
-  const fName = req.body.fName;
-  const photo = req.file.filename;
+router.route("/").post(upload.single("file"), (req, res) => {
+  const stdId = req.body.stdId;
+  const comment = req.body.comment;
+  const faculty = req.body.faculty;
+  const gradingStatus = req.body.gradingStatus;
+  const file = req.file.filename;
 
-  const file = new File({
-    fName,
-    photo,
+  const file_ = new File({
+    stdId,
+    comment,
+    faculty,
+    gradingStatus,
+    file,
   });
 
-  file
+  file_
     .save()
     .then(() => {
       res.json("file added");

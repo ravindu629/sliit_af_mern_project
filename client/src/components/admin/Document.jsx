@@ -32,8 +32,6 @@ export default function Document(props) {
       });
 
     setUpload({
-      faculty: props.fac,
-      gradingStatus: props.gStatus,
       stdId: "",
       comment: "",
       file: "",
@@ -59,9 +57,9 @@ export default function Document(props) {
     <div>
       <div className="note">
         <form onSubmit={sendData}>
-          <table class="table table-bordered">
+          <table class="table table-sm">
             <tbody>
-              <tr>
+              <tr style={{ color: "red" }}>
                 <th scope="row">Faculty</th>
                 <td>{props.fac}</td>
               </tr>
@@ -96,9 +94,10 @@ export default function Document(props) {
                 <td>
                   <textarea
                     type="text"
-                    placeholder="enter your comment"
-                    name="stdId"
-                    onChange={handleFile}
+                    placeholder="enter comments"
+                    name="comment"
+                    onChange={handleChange}
+                    value={upload.comment}
                     required
                   />
                 </td>
@@ -110,15 +109,14 @@ export default function Document(props) {
                     type="file"
                     accept=".png, .pdf, .jpeg"
                     name="file"
-                    onChange={handleChange}
-                    value={upload.stdId}
+                    onChange={handleFile}
                     required
                   />
                 </td>
               </tr>
               <tr>
                 <th scope="row">
-                  <button type="submit" style={{ fontSize: "120%" }}>
+                  <button type="submit" style={{ fontSize: "110%" }}>
                     <b>Upload</b>
                   </button>
                 </th>
