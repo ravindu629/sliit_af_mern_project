@@ -45,8 +45,8 @@ import "../App.css";
               <th scope="col">Topic name</th>
               <th scope="col">Marks</th>
               <th scope="col">Feedback</th>
-              <th></th>
-            </tr>
+              </tr>
+          
           </thead>
           <tbody className="table-light">
             {Marks.map((marks, index) => {

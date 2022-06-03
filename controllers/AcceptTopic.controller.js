@@ -41,7 +41,5 @@ const getacceptResearchTopics = async (req, res) => {
 module.exports = {
     acceptResearchTopic,
     getacceptResearchTopics,
-
 };
 
-};
