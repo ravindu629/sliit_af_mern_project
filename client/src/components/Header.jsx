@@ -16,6 +16,7 @@ function Header() {
           style={{ fontSize: "18px", fontWeight: "bold" }}
         >
           <Nav.Link href="/">HOME</Nav.Link>
+          <Nav.Link href="/facultyNotices">FACULTY_NOTICES</Nav.Link>
           <Nav.Link href="/adminLogin">ADMIN</Nav.Link>
           <Nav.Link href="/staffLogin">STAFF</Nav.Link>
           <Nav.Link href="/studentLogin">STUDENT</Nav.Link>

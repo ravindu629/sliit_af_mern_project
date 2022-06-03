@@ -36,6 +36,7 @@ app.use("/api/admins", require("./routes/Admin.route"));
 app.use("/api/staffMembers", require("./routes/Staff.route"));
 app.use("/api/students", require("./routes/Student.route"));
 app.use("/api/markingSchemas", require("./routes/MarkingSchema.route"));
+app.use("/api/submissions", require("./routes/Submission.route"));
 
 app.use("/api/addMarks", require("./routes/SupervisorMarks.route"));
 app.use("/api/acceptTopic", require("./routes/AcceptTopic.route"));

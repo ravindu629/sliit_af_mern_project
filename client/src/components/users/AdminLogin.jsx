@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
 import AdminMenu from "../admin/AdminMenu";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import VpnKey from "@mui/icons-material/VpnKey";
 
 function AdminLogin() {
   const [valid, setValid] = useState(false);
@@ -78,7 +80,8 @@ function AdminLogin() {
                       />
                     </div>
                     <button type="submit" className="btn btn-dark">
-                      Login
+                      <VpnKey />
+                      &nbsp;&nbsp; Login
                     </button>
                   </form>
                   <br />
