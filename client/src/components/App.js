@@ -51,6 +51,7 @@ import UpdateResearchTopic from "./students/UpdateResearchTopic";
 import ViewMarksNavPage from "./students/ViewMarksNavPage";
 import ViewDocumentMarks from "./students/ViewDocumentMarks";
 import ViewDocumentMarksReport from "./students/ViewDocumentMarksReport";
+import ViewStatusOfTopic from "./students/ViewStatusOfTopic";
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
           <Route path="/ViewMarksNavPage" element={<ViewMarksNavPage />} />
           <Route path="/ViewDocumentMarks" element={<ViewDocumentMarks />} />
           <Route path="/ViewDocumentMarksReport" element={<ViewDocumentMarksReport />} />
+          <Route path="/ViewStatusOfTopic" element={<ViewStatusOfTopic />} />
 
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
