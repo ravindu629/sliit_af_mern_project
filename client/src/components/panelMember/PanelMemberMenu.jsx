@@ -6,7 +6,7 @@ export default function PanelMemberMenu() {
     <div style={{ paddingLeft: "400px", paddingTop: "80px" }}>
       <h2 style={{ fontWeight: "bold" }}>Panel Member Menu</h2>
       <div className="navItem">
-        <a href="">
+        <a href="/ViewPresentationTopics">
           <button
             type="button"
             className="btn btn-secondary menuBtn"
@@ -39,17 +39,6 @@ export default function PanelMemberMenu() {
         </a>
       </div>
       <div className="navItem">
-        <a href="/PanelMemberMarkByID">
-          <button
-            type="button"
-            className="btn btn-secondary menuBtn"
-            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
-          >
-            Get Presentation Marks By Group ID
-          </button>
-        </a>
-      </div>
-      <div className="navItem">
         <a href="">
           <button
             type="button"
@@ -57,6 +46,17 @@ export default function PanelMemberMenu() {
             style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
           >
             Get Marking Scheme
+          </button>
+        </a>
+      </div>
+      <div className="navItem">
+        <a href="/PanelMemberMarksReport">
+          <button
+            type="button"
+            className="btn btn-secondary menuBtn"
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+          >
+            Presentation Marks Report
           </button>
         </a>
       </div>
