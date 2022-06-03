@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const {
-    AddPMMarks, GetPMmarks,GetPMmark, 
+    AddPMMarks, GetPMmarks,GetPMmark,updatePMMarks
   } = require("../controllers/PanelMemberMarks.controller");
   
   
@@ -10,6 +10,7 @@ const {
   router.post("/", AddPMMarks);
   router.get("/",GetPMmarks);
   router.get("/:id",GetPMmark);
+  router.put("/:id", updatePMMarks);
   
   
 

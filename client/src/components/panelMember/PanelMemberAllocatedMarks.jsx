@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import EditIcon from "@mui/icons-material/Edit";
 
 function AllPMmarks(){
     const[PMmark , setMarks] = useState([]);
@@ -20,6 +21,8 @@ function AllPMmarks(){
     }, []);
 
     return (
+
+        
         <div className="all">
         <h2 className="heading">All Presentation Marks Details</h2>
 
@@ -34,7 +37,7 @@ function AllPMmarks(){
               <th scope="col">Presentation name</th>
               <th scope="col">Marks</th>
               <th scope="col">Feedback</th>
-              <th></th>
+              <th>Update Marks</th>
             </tr>
           </thead>
           <tbody className="table-light">
@@ -48,8 +51,17 @@ function AllPMmarks(){
                   <td>{PMmark.topic}</td>
                   <td>{PMmark. marks}</td>
                   <td>{PMmark. feedback}</td>
-                
+                  <td>
+                  <a
+                    className="btn btn-warning"
+                    href={`/PanelMemberMarkUpdate/${PMmark._id}`}
+                  >
+                    <EditIcon/>
+                    &nbsp;&nbsp; <b>Update</b>
+                  </a>
+                  </td>
                 </tr>
+                
               );
             })}
           </tbody>

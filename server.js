@@ -44,7 +44,7 @@ app.use("/api/researchTopics", require("./routes/ResearchTopic.route"));
 
 app.use("/api/addPMMarks", require("./routes/PanelMemberMarks.route"));
 app.use("/api/GetPMmarks",require("./routes/PanelMemberMarks.route"));
-app.use("/api/GetPMmark", require("./routes/PanelMemberMarks.route"));
+//app.use("/api/GetPMmark", require("./routes/PanelMemberMarks.route"));
 
 
 app.listen(port, () => {

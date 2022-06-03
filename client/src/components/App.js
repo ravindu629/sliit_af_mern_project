@@ -54,6 +54,7 @@ import ViewDocumentMarks from "./students/ViewDocumentMarks";
 //Panel Member functionalities
 import PanelMemberMarksAllocation from "./panelMember/PanelMemberMarksAllocation";
 import PanelMemberAllocatedMarks from "./panelMember/PanelMemberAllocatedMarks";
+import PanelMemberMarkUpdate from "./panelMember/PanelMemberMarkUpdate"
 
 function App() {
   return (
@@ -93,6 +94,8 @@ function App() {
           
           <Route path="/PanelMemberMarksAllocation" element={<PanelMemberMarksAllocation />} />
           <Route path="/PanelMemberAllocatedMarks" element={<PanelMemberAllocatedMarks />}/>
+          <Route path="/PanelMemberMarkUpdate" element={<PanelMemberMarkUpdate />}/>
+
 
           <Route path="/addMarks" element={<AddMarks />} />
 
