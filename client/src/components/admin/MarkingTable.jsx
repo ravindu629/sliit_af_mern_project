@@ -74,7 +74,7 @@ function MarkingTable(props) {
                         deleteMarking(marking._id);
                     }}
                   >
-                    <DeleteForeverIcon /> Delete
+                    <DeleteForeverIcon />
                   </a>
                 </td>
               </tr>
