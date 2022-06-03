@@ -55,6 +55,7 @@ import EngScheme from "./admin/EngScheme";
 import Submission from "./admin/Submission";
 import AllSubmissions from "./admin/AllSubmissions";
 import SubmissionUpdate from "./admin/SubmissionUpdate";
+import AddSubmission from "./admin/AddSubmission";
 
 function App() {
   return (
@@ -121,6 +122,8 @@ function App() {
           <Route path="/submission" element={<Submission />} />
           <Route path="/allSubmissions" element={<AllSubmissions />} />
           <Route path="/updateSubmission/:id" element={<SubmissionUpdate />} />
+
+          <Route path="/addSubmission" element={<AddSubmission />} />
         </Routes>
 
         <Footer />
