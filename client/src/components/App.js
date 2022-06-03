@@ -51,6 +51,9 @@ import UpdateResearchTopic from "./students/UpdateResearchTopic";
 import ViewMarksNavPage from "./students/ViewMarksNavPage";
 import ViewDocumentMarks from "./students/ViewDocumentMarks";
 
+//Panel Member functionalities
+import PanelMemberMarksAllocation from "./panelMember/PanelMemberMarksAllocation";
+import PanelMemberAllocatedMarks from "./panelMember/PanelMemberAllocatedMarks";
 
 function App() {
   return (
@@ -83,7 +86,13 @@ function App() {
 
 
           <Route path="/supMenu" element={<SupervisorMenu />} />
+
+
           <Route path="/panelMenu" element={<PanelMemberMenu />} />
+
+          
+          <Route path="/PanelMemberMarksAllocation" element={<PanelMemberMarksAllocation />} />
+          <Route path="/PanelMemberAllocatedMarks" element={<PanelMemberAllocatedMarks />}/>
 
           <Route path="/addMarks" element={<AddMarks />} />
 

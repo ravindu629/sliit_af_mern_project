@@ -42,6 +42,11 @@ app.use("/api/addMarks", require("./routes/SupervisorMarks.route"));
 app.use("/api/studentGroups", require("./routes/StudentGroup.route"));
 app.use("/api/researchTopics", require("./routes/ResearchTopic.route"));
 
+app.use("/api/addPMMarks", require("./routes/PanelMemberMarks.route"));
+app.use("/api/GetPMmarks",require("./routes/PanelMemberMarks.route"));
+app.use("/api/GetPMmark", require("./routes/PanelMemberMarks.route"));
+
+
 app.listen(port, () => {
   console.log("Server is starting on port " + port);
 });

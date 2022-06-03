@@ -12,7 +12,29 @@ export default function PanelMemberMenu() {
             className="btn btn-secondary menuBtn"
             style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
           >
-            Manage xxxxxxxxxxx
+            View Topics
+          </button>
+        </a>
+      </div>
+      <div className="navItem">
+        <a href="/PanelMemberMarksAllocation">
+          <button
+            type="button"
+            className="btn btn-secondary menuBtn"
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+          >
+            Allocate Marks
+          </button>
+        </a>
+      </div>
+      <div className="navItem">
+        <a href="/PanelMemberAllocatedMarks">
+          <button
+            type="button"
+            className="btn btn-secondary menuBtn"
+            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
+          >
+            View Marks
           </button>
         </a>
       </div>
@@ -23,21 +45,11 @@ export default function PanelMemberMenu() {
             className="btn btn-secondary menuBtn"
             style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
           >
-            View xxxxxxxxxxxxxx
-          </button>
-        </a>
-      </div>
-      <div className="navItem">
-        <a href="">
-          <button
-            type="button"
-            className="btn btn-secondary menuBtn"
-            style={{ width: "35%", fontSize: "140%", marginTop: "20px" }}
-          >
-            Add xxxxxxxxxxxxxxx
+            Get Marking Scheme
           </button>
         </a>
       </div>
     </div>
+    
   );
 }
