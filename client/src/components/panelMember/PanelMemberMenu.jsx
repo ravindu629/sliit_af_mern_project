@@ -58,7 +58,7 @@ export default function PanelMemberMenu() {
             className="btn btn-danger"
             style={{ width: "80%", fontSize: "140%", marginTop: "20px", borderRadius:"50px"  }}
           >
-            Presentation Marks Report
+            Presentation Marks Progress
           </button>
         </a>
       </div>
