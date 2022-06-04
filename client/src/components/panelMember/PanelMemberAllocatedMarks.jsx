@@ -105,10 +105,14 @@ function AllPMmarks(){
           </tbody>
         </table>
         <br/><br/>
+        <a href="/panelMenu">
+        <button class="btn btn-success"> <b>Panel Member Menu</b></button></a>&nbsp;&nbsp;
         <button  class="btn btn-success" startIcon={<PictureAsPdfIcon />} onClick={window.print}>
            <b>Download Report</b>
             </button>
+          
       </div>
+
 
       );
 }

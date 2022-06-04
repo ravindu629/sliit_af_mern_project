@@ -5,6 +5,8 @@ import "../App.css";
 import Button from "@mui/material/Button";
 import SupervisorLogin from "./SupervisorLogin";
 import PanelMemberLogin from "./PanelMemberLogin";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import VpnKey from "@mui/icons-material/VpnKey";
 
 function StaffLogin() {
   const [sup, setSup] = useState(true);

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import VpnKey from "@mui/icons-material/VpnKey";
 
 function PanelMemberLogin(props) {
   const [valid, setValid] = useState(false);
@@ -54,7 +56,7 @@ function PanelMemberLogin(props) {
                 <div className="card-body">
                   <form onSubmit={sendData}>
                     <div className="form-group">
-                      <label for="id">Staff Id</label>
+                      <label for="id"><b>Staff Id</b></label>
                       <input
                         type="text"
                         className="form-control"
@@ -65,7 +67,7 @@ function PanelMemberLogin(props) {
                       />
                     </div>
                     <div className="form-group">
-                      <label for="password">Password</label>
+                      <label for="password"><b>Password</b></label>
                       <input
                         type="password"
                         className="form-control"
@@ -76,7 +78,8 @@ function PanelMemberLogin(props) {
                       />
                     </div>
                     <button type="submit" className="btn btn-dark">
-                      Login
+                    <VpnKey />&nbsp;&nbsp;
+                      <b>Login</b>
                     </button>
                   </form>
                   <br />

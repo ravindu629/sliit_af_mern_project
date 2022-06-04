@@ -1,5 +1,6 @@
 const PMMark = require("../models/PanelMemberMarks.model");
 
+//allocate mark
 const AddPMMarks = (req,res) =>{
     const{ fName,subject,groupId,topic,marks,PMname,feedback } =
     req.body;
