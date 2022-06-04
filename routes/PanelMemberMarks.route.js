@@ -13,7 +13,7 @@ const {
 
   router.get("/:id",GetPMmark);
 
-  router.put("/:id", updatePMMarks);
+  router.put("/:id",updatePMMarks);
 
   router.delete("/:id", removePMMarks);
   

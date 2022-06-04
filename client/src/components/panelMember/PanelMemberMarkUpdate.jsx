@@ -23,7 +23,7 @@ import { useParams } from "react-router";
   const { id } = useParams();
 
     useEffect(() => {
-      function getPMmark() {
+      function  GetPMmark() {
         axios
           .get(`http://localhost:5000/api/PanelMember/${id}`)
           .then((res) => {
@@ -33,17 +33,17 @@ import { useParams } from "react-router";
             alert(err.message);
           });
       }
-      getPMmark();
+       GetPMmark();
     }, []);
 
        
     function updatePMmark(e) {
       e.preventDefault();
 
-      const updatedPMmark = PMmark;
+      //const updatedPMmark = PMmark;
   
       axios
-        .put(`http://localhost:5000/api/PanelMember/${id}`, updatedPMmark)
+        .put(`http://localhost:5000/api/PanelMember/${id}`,PMmark)
         .then(() => {
           alert("marks updated");
           navigate("/PanelMemberAllocatedMarks");
@@ -111,15 +111,15 @@ import { useParams } from "react-router";
           </div>
 
           <div class="form-group row">
-            <label for="gName" class="col-sm-2 col-form-label">
+            <label for="groupId" class="col-sm-2 col-form-label">
               Group ID
             </label>
             <div class="col-sm-10">
               <input
                 type="text"
                 class="form-control"
-                id="gName"
-                name=" groupId"
+                id="groupId"
+                name="groupId"
                 placeholder="enter group id"
                 onChange={handleChange}
                 value={PMmark.groupId}
@@ -137,7 +137,7 @@ import { useParams } from "react-router";
                 type="text"
                 class="form-control"
                 id="tName"
-                name=" topic"
+                name="topic"
                 placeholder="enter group id"
                 onChange={handleChange}
                 value={PMmark.topic}

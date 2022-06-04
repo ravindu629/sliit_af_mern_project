@@ -57,6 +57,7 @@ import PanelMemberAllocatedMarks from "./panelMember/PanelMemberAllocatedMarks";
 import PanelMemberMarkUpdate from "./panelMember/PanelMemberMarkUpdate";
 import ViewPresentationTopics from "./panelMember/ViewPresentationTopics";
 import PanelMemberMarksReport from "./panelMember/PanelMemberMarksReport";
+import GetPMMarkingSchema from "./panelMember/GetPMMarkingSchema";
 
 function App() {
   return (
@@ -96,9 +97,10 @@ function App() {
           
           <Route path="/PanelMemberMarksAllocation" element={<PanelMemberMarksAllocation />} />
           <Route path="/PanelMemberAllocatedMarks" element={<PanelMemberAllocatedMarks />}/>
-          <Route path="/PanelMemberMarkUpdate" element={<PanelMemberMarkUpdate />}/>
+          <Route path="/PanelMemberMarkUpdate/:id" element={<PanelMemberMarkUpdate />}/>
           <Route path="/ViewPresentationTopics" element={<ViewPresentationTopics />}/>
           <Route path="/PanelMemberMarksReport" element={<PanelMemberMarksReport />}/>
+          <Route path="/GetPMMarkingSchema" element={<GetPMMarkingSchema />}/>
 
 
           <Route path="/addMarks" element={<AddMarks />} />

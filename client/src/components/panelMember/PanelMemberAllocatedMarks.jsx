@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 
 function AllPMmarks(){
     const[PMmark , setMarks] = useState([]);
@@ -52,12 +53,13 @@ function AllPMmarks(){
               <th scope="col">Group ID</th>
               <th scope="col">Presentation name</th>
               <th scope="col">Marks</th>
+              <th scope="col">Panel Member</th>
               <th scope="col">Feedback</th>
               <th>Update Marks</th>
               <th>Delete Marks</th>
             </tr>
           </thead>
-          <tbody className="table-light">
+          <tbody className="table-primary">
             {PMmark.map((PMmark, index) => {
               return (
                 <tr key={PMmark._id}>
@@ -67,6 +69,7 @@ function AllPMmarks(){
                   <td>{PMmark.groupId}</td>
                   <td>{PMmark.topic}</td>
                   <td>{PMmark. marks}</td>
+                  <td>{PMmark. PMname}</td>
                   <td>{PMmark. feedback}</td>
                   <td>
                   <a
@@ -101,6 +104,10 @@ function AllPMmarks(){
             })}
           </tbody>
         </table>
+        <br/><br/>
+        <button  class="btn btn-success" startIcon={<PictureAsPdfIcon />} onClick={window.print}>
+           <b>Download Report</b>
+            </button>
       </div>
 
       );

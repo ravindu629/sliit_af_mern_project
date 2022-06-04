@@ -47,10 +47,10 @@ const GetPMmark = async (req,res) => {
 
 //update 
 const updatePMMarks = async (req, res) => {
-  const PMmarksId = req.params.id;
+  const PMmarkId = req.params.id;
 
   try {
-    const PMmarks = await PanelMemberMarks.findById(PMmarksId);
+    const PMmarks = await PanelMemberMarks.findById(PMmarkId);
 
     if (!PMmarks) {
       return res.status(404).json("There is no student to update");
@@ -66,7 +66,7 @@ const updatePMMarks = async (req, res) => {
       feedback,
     } = req.body;
 
-    const updatedPMMarks = await PanelMemberMarks.findByIdAndUpdate(PMmarksId, {
+    const updatedPMMarks = await PanelMemberMarks.findByIdAndUpdate(PMmarkId, {
       fName,
       subject,
       groupId,
