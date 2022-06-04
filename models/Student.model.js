@@ -4,7 +4,13 @@ const { Schema } = mongoose;
 const studentSchema = new Schema({
   fName: String,
   lName: String,
-  studentId: String,
+  studentId: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+    index: true,
+  },
   faculty: String,
   nic: String,
   phoneNumber: Number,

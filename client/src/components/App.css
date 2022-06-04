@@ -143,7 +143,11 @@ footer p {
 }
 
 .AFRightNavBar {
+<<<<<<< HEAD
+  margin-top: -60%;
+=======
   margin-top: -40%;
+>>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
   margin-left: 71.2%;
   position: relative;
   width: 400px;
@@ -431,4 +435,32 @@ footer p {
   width: 400px;
   height: 58px;
   transition-duration: 0.4;
+<<<<<<< HEAD
+}
+
+/*-----------------*/
+
+
+.docSubmit1{
+  border: 5px solid #a3a305;
+  width: 550px;
+  margin-left: 28%;
+  margin-top: 40px;
+}
+
+
+.SubmitDocHead{ 
+  color: red;
+  margin-left: -25%;
+}
+
+.SubmitPptHead{ 
+  color: red;
+  margin-left: 25%;
+}
+
+.button11{
+  margin-left: 100px;
+=======
+>>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
 }

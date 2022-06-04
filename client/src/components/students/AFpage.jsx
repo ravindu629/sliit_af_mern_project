@@ -55,6 +55,17 @@ function AFpage() {
         <hr className="AFPageHr2" />
       </div>
       
+<<<<<<< HEAD
+      <h3>&nbsp;&nbsp;&nbsp;Submissions</h3>
+      <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;submit your project and project materials below</h5>
+      <div className="navItem">
+            <a href="/StdDocDocument">
+              <button type="button" className="AFRightNavBarButtons button1">
+                <pre> Student Document</pre>
+              </button>
+            </a>
+      </div><br /><br /><br />
+=======
 
 
 
@@ -69,6 +80,7 @@ function AFpage() {
         </a>
       </div>
 
+>>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
 
 
 
@@ -107,6 +119,11 @@ function AFpage() {
             </a>
           </div>
 
+<<<<<<< HEAD
+          
+
+=======
+>>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
 
         </div>
       </div>

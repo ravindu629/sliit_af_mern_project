@@ -43,6 +43,9 @@ app.use("/api/acceptTopic", require("./routes/AcceptTopic.route"));
 
 app.use("/api/studentGroups", require("./routes/StudentGroup.route"));
 app.use("/api/researchTopics", require("./routes/ResearchTopic.route"));
+app.use("/api/stdDocfiles", require("./routes/StdDocFiles.route"));
+
+app.use("/api/PanelMember", require("./routes/PanelMemberMarks.route"));
 
 
 app.use("/api/PanelMember", require("./routes/PanelMemberMarks.route"));
