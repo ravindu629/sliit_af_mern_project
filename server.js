@@ -47,6 +47,12 @@ app.use("/api/stdDocfiles", require("./routes/StdDocFiles.route"));
 
 app.use("/api/PanelMember", require("./routes/PanelMemberMarks.route"));
 
+
+app.use("/api/PanelMember", require("./routes/PanelMemberMarks.route"));
+
+app.use("/api/files", require("./routes/Files.route"));
+
+
 app.listen(port, () => {
   console.log("Server is starting on port " + port);
 });

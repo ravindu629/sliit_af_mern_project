@@ -55,6 +55,7 @@ function AFpage() {
         <hr className="AFPageHr2" />
       </div>
       
+<<<<<<< HEAD
       <h3>&nbsp;&nbsp;&nbsp;Submissions</h3>
       <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;submit your project and project materials below</h5>
       <div className="navItem">
@@ -64,6 +65,22 @@ function AFpage() {
               </button>
             </a>
       </div><br /><br /><br />
+=======
+
+
+
+      <div>
+        7 February - 13 February
+      </div>
+      <div className="navItem">
+        <a href="https://drive.google.com/drive/folders/1-YTswm8zPPp4P7eodwATGxHIiXc5wXuI?usp=sharing">
+          <button type="button" className="AFRightNavBarButtons button1">
+            <pre>Upload Projects</pre>
+          </button>
+        </a>
+      </div>
+
+>>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
 
 
 
@@ -102,8 +119,11 @@ function AFpage() {
             </a>
           </div>
 
+<<<<<<< HEAD
           
 
+=======
+>>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
 
         </div>
       </div>

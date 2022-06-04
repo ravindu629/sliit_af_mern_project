@@ -8,30 +8,6 @@ import image from "../images/admin.jpg";
 export default function AdminMenu() {
   const location = useLocation();
 
-  // const [admin, setAdmin] = useState({
-  //   fName: "",
-  //   lName: "",
-  //   adminId: "",
-  //   nic: "",
-  //   phoneNumber: "",
-  //   email: "",
-  //   password: "",
-  // });
-
-  // useEffect(() => {
-  //   function getAdmin() {
-  //     axios
-  //       .get("http://localhost:5000/api/admins/" + location.state.admId)
-  //       .then((res) => {
-  //         setAdmin(res.data);
-  //       })
-  //       .catch((err) => {
-  //         alert(err.message);
-  //       });
-  //   }
-  //   getAdmin();
-  // }, []);
-
   return (
     <div>
       <div className="adminMenu">
@@ -81,23 +57,6 @@ export default function AdminMenu() {
           }}
         >
           <img className="bgImg" src={image} />
-          {/* <div
-            style={{
-              paddingLeft: "120px",
-              marginTop: "15px",
-              fontSize: "120%",
-              fontWeight: "bold",
-              fontStyle: "italic",
-            }}
-          >
-            <p>{admin.adminId}</p>
-
-            <p>
-              {admin.fName} {admin.lName}
-            </p>
-            <p>{admin.email}</p>
-            <p>{admin.phoneNumber}</p>
-          </div> */}
         </div>
       </div>
     </div>
