@@ -47,6 +47,11 @@ import ViewMarksNavPage from "./students/ViewMarksNavPage";
 import ViewDocumentMarks from "./students/ViewDocumentMarks";
 import ViewDocumentMarksReport from "./students/ViewDocumentMarksReport";
 import ViewStatusOfTopic from "./students/ViewStatusOfTopic";
+import StdViewPanelMemberAllocatedMarks from "./students/StdViewPanelMemberAllocatedMarks"
+
+import StdDocDocument from "./students/StdDocDocument"
+
+
 
 import CreateMarking from "./admin/CreateMarking";
 import FacultyNotices from "./admin/FacultyNotices";
@@ -79,30 +84,18 @@ function App() {
           <Route path="/AFpage" element={<AFpage />} />
           <Route path="/studentGroup" element={<StudentGroup />} />
           <Route path="/CreateStudentGroup" element={<CreateStudentGroup />} />
-          <Route
-            path="/updateStudentGroup/:id"
-            element={<UpdateStudentGroup />}
-          />
+          <Route path="/updateStudentGroup/:id" element={<UpdateStudentGroup />} />
           <Route path="/researchTopic" element={<ResearchTopic />} />
-          <Route
-            path="/RegisterResearchTopic"
-            element={<RegisterResearchTopic />}
-          />
-          <Route
-            path="/updateResearchTopic/:id"
-            element={<UpdateResearchTopic />}
-          />
+          <Route path="/RegisterResearchTopic" element={<RegisterResearchTopic />} />
+          <Route path="/updateResearchTopic/:id" element={<UpdateResearchTopic />} />
           <Route path="/ViewMarksNavPage" element={<ViewMarksNavPage />} />
           <Route path="/ViewDocumentMarks" element={<ViewDocumentMarks />} />
-
           <Route path="/ViewDocumentMarksReport" element={<ViewDocumentMarksReport />} />
           <Route path="/ViewStatusOfTopic" element={<ViewStatusOfTopic />} />
+          <Route path="/StdViewPanelMemberAllocatedMarks" element={<StdViewPanelMemberAllocatedMarks />} />
+          <Route path="/StdDocDocument" element={<StdDocDocument />} />
 
-
-          <Route
-            path="/ViewDocumentMarksReport"
-            element={<ViewDocumentMarksReport />}
-          />
+         
 
 
           <Route path="/supMenu" element={<SupervisorMenu />} />

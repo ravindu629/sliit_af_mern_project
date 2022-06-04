@@ -12,16 +12,16 @@ import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
             <a href="/ViewDocumentMarks">
               <button type="button" className="ViewMarkNavButton button5">
                 <ArrowCircleRightIcon />
-                &nbsp;&nbsp;&nbsp;&nbsp; Document Marks
+                &nbsp;&nbsp; Document Marks
               </button>
             </a>
           </div>
 
           <div className="navItem">
-            <a href="/addAdmin">
+            <a href="/StdViewPanelMemberAllocatedMarks">
               <button type="button" className="ViewMarkNavButton button5">
                 <ArrowCircleRightIcon />
-                &nbsp;&nbsp;&nbsp;&nbsp; Add a new Admin
+                &nbsp;&nbsp; Presentation Marks
               </button>
             </a>
           </div>
