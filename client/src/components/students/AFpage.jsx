@@ -25,11 +25,11 @@ function AFpage() {
         <button type="button" className="button8">
           <pre> &nbsp;&nbsp;&nbsp;📋 Project and module otline</pre>
         </button>
-      </a><br/>
+      </a><br />
       <a href="https://drive.google.com/file/d/1vFXHj0wD7Pro6COhqgU2-ifa6xFzLmSa/view?usp=sharing">
         <button type="button" className="button8">
           <pre> &nbsp;&nbsp;&nbsp;📋 Project 1 - Pdf</pre>
-        </button><br/>
+        </button><br />
       </a>
       <a href="https://drive.google.com/file/d/1FJjWcBGGvr04ylh9Nlknc3qlCRGPlmF4/view?usp=sharing">
         <button type="button" className="button8">
@@ -54,33 +54,23 @@ function AFpage() {
       <div >
         <hr className="AFPageHr2" />
       </div>
-      
-<<<<<<< HEAD
-      <h3>&nbsp;&nbsp;&nbsp;Submissions</h3>
-      <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;submit your project and project materials below</h5>
-      <div className="navItem">
-            <a href="/StdDocDocument">
-              <button type="button" className="AFRightNavBarButtons button1">
-                <pre> Student Document</pre>
-              </button>
-            </a>
-      </div><br /><br /><br />
-=======
+
+
 
 
 
       <div>
-        7 February - 13 February
+        <h3>&nbsp;&nbsp;&nbsp;Submissions</h3>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit your project and project matirials below</h5>
       </div>
       <div className="navItem">
-        <a href="https://drive.google.com/drive/folders/1-YTswm8zPPp4P7eodwATGxHIiXc5wXuI?usp=sharing">
+        <a href="/StdDocDocument">
           <button type="button" className="AFRightNavBarButtons button1">
-            <pre>Upload Projects</pre>
+            <pre>Student Document</pre>
           </button>
         </a>
       </div>
-
->>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
+      <br /><br /><br />
 
 
 
@@ -119,11 +109,6 @@ function AFpage() {
             </a>
           </div>
 
-<<<<<<< HEAD
-          
-
-=======
->>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
 
         </div>
       </div>
@@ -134,3 +119,5 @@ function AFpage() {
 
 
 export default AFpage;
+
+//https://drive.google.com/drive/folders/1-YTswm8zPPp4P7eodwATGxHIiXc5wXuI?usp=sharing

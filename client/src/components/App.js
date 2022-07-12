@@ -48,13 +48,10 @@ import ViewDocumentMarks from "./students/ViewDocumentMarks";
 import ViewDocumentMarksReport from "./students/ViewDocumentMarksReport";
 import ViewStatusOfTopic from "./students/ViewStatusOfTopic";
 import StdViewPanelMemberAllocatedMarks from "./students/StdViewPanelMemberAllocatedMarks"
-
-<<<<<<< HEAD
 import StdDocDocument from "./students/StdDocDocument"
 
 
-=======
->>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
+
 
 import CreateMarking from "./admin/CreateMarking";
 import FacultyNotices from "./admin/FacultyNotices";
@@ -97,10 +94,8 @@ function App() {
           <Route path="/ViewDocumentMarksReport" element={<ViewDocumentMarksReport />} />
           <Route path="/ViewStatusOfTopic" element={<ViewStatusOfTopic />} />
           <Route path="/StdViewPanelMemberAllocatedMarks" element={<StdViewPanelMemberAllocatedMarks />} />
-<<<<<<< HEAD
           <Route path="/StdDocDocument" element={<StdDocDocument />} />
-=======
->>>>>>> 2ac8f0e897a1241b75eeae1f99f0bff247f7e17b
+
 
          
 

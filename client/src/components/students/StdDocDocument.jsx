@@ -50,7 +50,7 @@ export default function StdDocument(props) {
 
   return (
     <div>
-      <div className="note">
+      <div>
         <div class="docSubmit1">
           <form onSubmit={sendData}>
             <table class="table table-striped stdTable1">
